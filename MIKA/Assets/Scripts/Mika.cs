@@ -3,12 +3,12 @@ using UnityEngine.InputSystem;
 
 public class Mika : MonoBehaviour
 {
-      private InputSystem_Actions playerinput;
+   private InputSystem_Actions playerinput;
    private InputAction move;
    private InputAction jump;
    private Rigidbody2D rb;
    [SerializeField]private float jforce = 50;
-   private Transform ground_pivot;
+   [SerializeField] private Transform ground_pivot;
    [SerializeField] private LayerMask ground_layer;
    private Animator animator;
    private SpriteRenderer sprite;
@@ -42,48 +42,49 @@ public class Mika : MonoBehaviour
    
    void Start()
    {
-       //animator = GetComponent<Animator>();
+       animator = GetComponent<Animator>();
        rb = GetComponent<Rigidbody2D>();
        sprite = GetComponent<SpriteRenderer>();
        ground_pivot = transform.GetChild(0);
    }
-   
-   void Update()
-   {
-       detectGround();
 
-       if(jump.WasPressedThisFrame() == true
-       && detectGround() == true)
-       {
-          jump_action();
-       }
-   }
+    void Update()
+    {
+        // Armazena o resultado do chão uma única vez por frame
+        isOnGround = detectGround();
 
-   void FixedUpdate()
+        // Verifica se apertou espaço E se está firmemente no chão
+        if (jump.triggered && isOnGround)
+        {
+            jump_action();
+        }
+    }
+
+    void FixedUpdate()
    {
        move_action();
    }
 
-   private bool detectGround()
-   {
-       Collider2D col = Physics2D.OverlapCircle(
-           ground_pivot.position, 0.1f, ground_layer);
-       
-           if(col == null)
-           {
-               animator.SetBool("is_jumping", true);
+    private bool detectGround()
+    {
+        // Desenha o círculo invisível para checar o chão
+        Collider2D col = Physics2D.OverlapCircle(ground_pivot.position, 0.3f, ground_layer);
 
-               return false;
-           }
-           else
-           {            
-               animator.SetBool("is_jumping", false);
+        if (col == null)
+        {
+            // Se NÃO encontrou o chão: ativa animação de pulo e retorna FALSE (não pode pular)
+            animator.SetBool("is_jumping", true);
+            return false;
+        }
+        else
+        {
+            // Se ENCONTROU o chão: desativa animação de pulo e retorna TRUE (pode pular)
+            animator.SetBool("is_jumping", false);
+            return true;
+        }
+    }
 
-               return true;
-           }
-   }
-
-   private void jump_action()
+    private void jump_action()
    {
        rb.AddForce(transform.up * jforce, ForceMode2D.Impulse);
    }
@@ -119,4 +120,13 @@ public class Mika : MonoBehaviour
             m_MovementSmoothing);
 
    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (ground_pivot != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(ground_pivot.position, 0.3f); // Altere o 0.3f para o tamanho que usar no OverlapCircle
+        }
+    }
 }
