@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour
     //BOTÃO JOGAR
     public void start_game()
     {
-        SceneManager.LoadScene("cena principal");
+        SceneManager.LoadScene("cutscene_00");
     }
     
     //BOTÃO CONTINUAR
