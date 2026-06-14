@@ -5,8 +5,7 @@ using TMPro;
 
 public class se : MonoBehaviour
 {
-	public int sond_effect = 10;
-	public int music = 10;
+	
 	[SerializeField] private TMP_Text sond_effect_value;
 	[SerializeField] private TMP_Text music_value;
 
@@ -20,8 +19,8 @@ public class se : MonoBehaviour
    void Update()
    {
 	   //VALOR DO VOLUME NO PAINEL
-	   sond_effect_value.text = sond_effect.ToString();
-	   music_value.text = music.ToString();
+	   sond_effect_value.text = master_setting.Instance.sond_effect.ToString();
+	   music_value.text = master_setting.Instance.music.ToString();
    }
 
 	void Start()
@@ -42,26 +41,34 @@ public class se : MonoBehaviour
 	//EXECUÇÃO DOS BOTÕES DO SISTEMA DE VOLUME
 	public void subtract_sond_effect_game()
 	{
-		if (sond_effect>0)
-		{sond_effect -=1; }
+		if (master_setting.Instance.sond_effect>0)
+		{
+			master_setting.Instance.sond_effect -=1;
+		}
 	}
 
 	public void add_sond_effect_game()
 	{
-		if (sond_effect<10)
-		{sond_effect +=1;}
+		if (master_setting.Instance.sond_effect<10)
+		{
+			master_setting.Instance.sond_effect +=1;
+		}
 	}
 
 	public void subtract_music_game()
 	{
-		if (music>0)
-		{music -=1;}
+		if (master_setting.Instance.music>0)
+		{
+			master_setting.Instance.music -=1;
+		}
 	}
 
 	public void add_music_game()
 	{
-		if (music<10)
-		{music +=1;}
+		if (master_setting.Instance.music<10)
+		{
+			master_setting.Instance.music +=1;
+		}
 	}
 
 	//EXECUÇÃO DO BOTÃO VOLTAR
