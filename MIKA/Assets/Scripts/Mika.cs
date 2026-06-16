@@ -3,7 +3,17 @@ using UnityEngine.InputSystem;
 
 public class Mika : MonoBehaviour
 {
-   private InputSystem_Actions playerinput;
+    [Header("Configuracoes de Borda")]
+    public Transform ledgeCheck;
+    public Transform ledgeTopCheck;
+    public LayerMask ledgeLayer;
+    public float checkDistance = 0.5f;
+    public Vector2 climbOffset = new Vector2(0.5f, 1.5f); // Quanto ele vai para frente e para cima ao subir
+    private bool isHanging = false;
+    private Vector2 targetHangingPosition;
+
+
+    private InputSystem_Actions playerinput;
    private InputAction move;
    private InputAction jump;
    private Rigidbody2D rb;
@@ -50,35 +60,77 @@ public class Mika : MonoBehaviour
 
     void Update()
     {
-        // Armazena o resultado do chão uma única vez por frame
+        // Armazena o resultado do chao uma unica vez por frame
         isOnGround = detectGround();
 
-        // Verifica se apertou espaço E se está firmemente no chão
+        // Verifica se apertou espaÃ§o E se esta firmemente no chao
         if (jump.triggered && isOnGround)
         {
             jump_action();
+        }
+
+        if (!isHanging)
+        {
+            CheckForLedge();
+        }
+        else
+        {
+            //ForÃ§a o personagem a ficar imÃ³vel horizontalmente na borda
+            rb.linearVelocity = Vector2.zero;
+            float inputVertical = 0;
+
+            if (UnityEngine.InputSystem.Keyboard.current != null)
+            {
+                if (UnityEngine.InputSystem.Keyboard.current.wKey.isPressed ||
+                    UnityEngine.InputSystem.Keyboard.current.upArrowKey.isPressed)
+                {
+                    inputVertical = 1f; // Apertou para subir
+                }
+                else if (UnityEngine.InputSystem.Keyboard.current.sKey.isPressed ||
+                         UnityEngine.InputSystem.Keyboard.current.downArrowKey.isPressed)
+                {
+                    inputVertical = -1f; // Apertou para soltar
+                }
+            }
+            // ------------------------------------------
+
+            // Processa a subida
+            if (inputVertical > 0)
+            {
+                ClimbLedge();
+            }
+            // Processa a soltura
+            else if (inputVertical < 0)
+            {
+                DropLedge();
+            }
         }
     }
 
     void FixedUpdate()
    {
-       move_action();
-   }
+        move_action();
+
+        if (isHanging)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+    }
 
     private bool detectGround()
     {
-        // Desenha o círculo invisível para checar o chão
+        // Desenha o circulo invisï¿½vel para checar o chï¿½o
         Collider2D col = Physics2D.OverlapCircle(ground_pivot.position, 0.3f, ground_layer);
 
         if (col == null)
         {
-            // Se NÃO encontrou o chão: ativa animação de pulo e retorna FALSE (não pode pular)
+            // Se NaO encontrou o chï¿½o: ativa animaï¿½ï¿½o de pulo e retorna FALSE (nï¿½o pode pular)
             animator.SetBool("is_jumping", true);
             return false;
         }
         else
         {
-            // Se ENCONTROU o chão: desativa animação de pulo e retorna TRUE (pode pular)
+            // Se ENCONTROU o chï¿½o: desativa animaï¿½ï¿½o de pulo e retorna TRUE (pode pular)
             animator.SetBool("is_jumping", false);
             return true;
         }
@@ -121,12 +173,58 @@ public class Mika : MonoBehaviour
 
    }
 
+    void CheckForLedge()
+    {
+        // 1. Dispara o raio de baixo (no peito/mÃ£o)
+        RaycastHit2D hitBaixo = Physics2D.Raycast(ledgeCheck.position, transform.right, checkDistance, ledgeLayer);
+
+        // 2. Dispara o raio de cima (acima da cabeÃ§a)
+        RaycastHit2D hitCima = Physics2D.Raycast(ledgeTopCheck.position, transform.right, checkDistance, ledgeLayer);
+
+        // LÃ“GICA DA QUINA: O de baixo bate na parede E o de cima NÃƒO bate em nada
+        if (hitBaixo.collider != null && hitCima.collider == null && rb.linearVelocity.y <= 0)
+        {
+            GrabLedge(hitBaixo.point);
+        }
+    }
+
+    void GrabLedge(Vector2 hitPoint)
+    {
+        isHanging = true;
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 0;
+
+        // Trava o personagem na posiï¿½ï¿½o do impacto (ajuste conforme necessï¿½rio)
+        transform.position = new Vector2(hitPoint.x - (0.2f * transform.localScale.x), hitPoint.y);
+    }
+
+    void ClimbLedge()
+    {
+        // Calcula a posiï¿½ï¿½o final (topo da plataforma) baseado para onde o personagem olha
+        float direction = transform.localScale.x;
+        Vector2 finalPosition = new Vector2(transform.position.x + (climbOffset.x * direction), transform.position.y + climbOffset.y);
+
+        // Teleporta o jogador para cima da plataforma
+        transform.position = finalPosition;
+
+        // Restaura a fï¿½sica
+        rb.gravityScale = 1;
+        isHanging = false;
+    }
+
+    void DropLedge()
+    {
+        rb.gravityScale = 1;
+        isHanging = false;
+    }
+
     private void OnDrawGizmosSelected()
     {
-        if (ground_pivot != null)
+        // Desenha o raio no editor da Unity para ajudar a calibrar
+        if (ledgeCheck != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(ground_pivot.position, 0.3f); // Altere o 0.3f para o tamanho que usar no OverlapCircle
+            Gizmos.DrawLine(ledgeCheck.position, ledgeCheck.position + transform.right * checkDistance);
         }
     }
 }
