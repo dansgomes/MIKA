@@ -7,7 +7,7 @@ public class Mika : MonoBehaviour
     public Transform ledgeCheck;
     public Transform ledgeTopCheck;
     public LayerMask ledgeLayer;
-    public float checkDistance = 0.5f;
+    public float checkDistance = 5f;
     public Vector2 climbOffset = new Vector2(0.5f, 1.5f); // Quanto ele vai para frente e para cima ao subir
     private bool isHanging = false;
     private Vector2 targetHangingPosition;
@@ -184,6 +184,7 @@ public class Mika : MonoBehaviour
         // LÓGICA DA QUINA: O de baixo bate na parede E o de cima NÃO bate em nada
         if (hitBaixo.collider != null && hitCima.collider == null && rb.linearVelocity.y <= 0)
         {
+            Debug.Log("grabed");
             GrabLedge(hitBaixo.point);
         }
     }
@@ -218,13 +219,15 @@ public class Mika : MonoBehaviour
         isHanging = false;
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         // Desenha o raio no editor da Unity para ajudar a calibrar
         if (ledgeCheck != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(ledgeCheck.position, ledgeCheck.position + transform.right * checkDistance);
+            Gizmos.DrawRay(ledgeCheck.position,  Vector3.right.normalized * checkDistance);
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(ledgeTopCheck.position, Vector3.right.normalized * checkDistance);
         }
     }
 }

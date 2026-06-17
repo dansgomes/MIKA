@@ -279,7 +279,7 @@ Transform:
   m_GameObject: {fileID: 266248974}
   serializedVersion: 2
   m_LocalRotation: {x: 0.02900132, y: -0.028735822, z: 0.7097585, w: 0.70326096}
-  m_LocalPosition: {x: 7.3347, y: -2.3054, z: -0.1536}
+  m_LocalPosition: {x: -3.26, y: -2.45, z: -0.15}
   m_LocalScale: {x: 5.3741326, y: 7.9332156, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -595,7 +595,7 @@ MonoBehaviour:
   ledgeLayer:
     serializedVersion: 2
     m_Bits: 256
-  checkDistance: 0.5
+  checkDistance: 0.55
   climbOffset: {x: 0.5, y: 1.5}
   jforce: 8
   ground_pivot: {fileID: 1525087670}
