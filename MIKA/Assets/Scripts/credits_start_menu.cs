@@ -14,5 +14,6 @@ public class credits_start_menu : MonoBehaviour
 	public void return_game()
     {
         SceneManager.LoadScene("menu_principal");
+		sond_manager.instance.play_sond_effects("pac");
     }
 }

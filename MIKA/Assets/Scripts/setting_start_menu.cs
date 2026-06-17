@@ -44,6 +44,7 @@ public class se : MonoBehaviour
 		if (master_setting.Instance.sond_effect>0)
 		{
 			master_setting.Instance.sond_effect -=1;
+			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
 
@@ -52,6 +53,7 @@ public class se : MonoBehaviour
 		if (master_setting.Instance.sond_effect<10)
 		{
 			master_setting.Instance.sond_effect +=1;
+			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
 
@@ -60,6 +62,7 @@ public class se : MonoBehaviour
 		if (master_setting.Instance.music>0)
 		{
 			master_setting.Instance.music -=1;
+			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
 
@@ -68,6 +71,7 @@ public class se : MonoBehaviour
 		if (master_setting.Instance.music<10)
 		{
 			master_setting.Instance.music +=1;
+			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
 
@@ -75,5 +79,6 @@ public class se : MonoBehaviour
 	public void return_game()
     {
         SceneManager.LoadScene("menu_principal");
+		sond_manager.instance.play_sond_effects("pac");
     }
 }

@@ -21,29 +21,33 @@ public class Menu : MonoBehaviour
     public void start_game()
     {
         SceneManager.LoadScene("cutscene_00");
+        sond_manager.instance.play_sond_effects("pac");
     }
     
     //BOTÃO CONTINUAR
     public void continue_game()
     {
-
+        sond_manager.instance.play_sond_effects("pac");
     }
 
     //BOTÃO CONFIGURAÇÕES
     public void settings_game()
     {
         SceneManager.LoadScene("setting_menu_scene");
+        sond_manager.instance.play_sond_effects("pac");
     }
     
     //BOTÃO CRÉDITOS
     public void credits_game()
     {
         SceneManager.LoadScene("credits_scene");
+        sond_manager.instance.play_sond_effects("pac");
     }
         
     //BOTÃO SAIR
     public void exit_game()
     {
+        sond_manager.instance.play_sond_effects("pac");
         Application.Quit();
     }
 }

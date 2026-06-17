@@ -13,5 +13,6 @@ public class cutscene00 : MonoBehaviour
 	public void nest_game_01()
     {
         SceneManager.LoadScene("cena principal");
+		sond_manager.instance.play_sond_effects("pac");
     }
 }
