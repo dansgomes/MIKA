@@ -1,0 +1,4495 @@
+fileFormatVersion: 2
+guid: 63968601c7ccbff48b6c1f06b152d669
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7161746339752336627
+    second: ATLAS_MIKA170X170_0
+  - first:
+      213: 9053449889471878505
+    second: ATLAS_MIKA170X170_1
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 170
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03ab9706ad5c9c90800000000000000
+      internalID: -7161746339752336627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96555cd05b054ad70800000000000000
+      internalID: 9053449889471878505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866a369f07491a643bb5183c3b7b3ded
+      internalID: 63245404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a3ed668f4bc314da9578ac612a695a
+      internalID: 1100640411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_4
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88decb17681ea234eb35ac661156b602
+      internalID: 314614809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_5
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0837eaf9a529047b7bb18f89b038a2
+      internalID: 1897553720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_6
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e565f5ddba3f4164497c569a4ca4ccf3
+      internalID: 604231613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_7
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0d20a9cf35b794eabedef57585d741
+      internalID: 505163915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_8
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131b4a327327ca840943552bf31db16e
+      internalID: 1219365269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_9
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713b3199b79a2bc4c8503969ff5754bb
+      internalID: 617333395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_10
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f243a3c4394d8d49927fc7fdefb2432
+      internalID: 2039177707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_11
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c12ff032b54e934eb3f2ccae4f3d571
+      internalID: 320779570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_12
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25235d820f74fb748a488b79a38513d1
+      internalID: 1564877896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_13
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5512bf326d18045a926629876043c3
+      internalID: -1758830834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_14
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3285de3e92c245f4ba2fe5a8c9137136
+      internalID: -29577979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_15
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88bedc675783c0428d0709e3f22b4b8
+      internalID: 1385013693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_16
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f338e8774ca7440be0f79d069d85bc
+      internalID: 742503489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_17
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b806aafc187f6dd449423bee52b06f22
+      internalID: 54557343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_18
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1530
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632bdc7c6b126724aae8e03ef702330c
+      internalID: -366400859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993876313e6c6694f9a11fbb2e34e09e
+      internalID: 702787935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_20
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f529ea2c0583f4c82b8f0e306fb17a
+      internalID: -455523769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_21
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4eca9b9a806cc44b05c33f900c94ab
+      internalID: 1541956776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_22
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab22b8afd24d6e64eb60a0997ad263e7
+      internalID: 1455152942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_23
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451c2bbc7b08cdb4dbb5a6bd7fa832bd
+      internalID: 390680213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_24
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4d32d5b1c39ca4a9ce48a981eaa4fc
+      internalID: 512042614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_25
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd51480de22b42843a76cc6ce29bc9ff
+      internalID: -90896437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_26
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0014b114e5694a04e8ca721b0e0e3b8e
+      internalID: 444414792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_27
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f56028790215ab4fa8e4ac771322682
+      internalID: -1926505504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_28
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc0d18e7408aa14c8b9abfbaf2b2a42
+      internalID: 2033331749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_29
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c066edb3bb49c4ebd9903bb0a5c1f8
+      internalID: -479124335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_30
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e0d3e37cbb2f14999f455256203c8e
+      internalID: 935975305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_31
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100299f322b313d4ba3bf854334735d1
+      internalID: -91089893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_32
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e48577915e9ba34da589f060c91ea75
+      internalID: 465345926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_33
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f61f932a3c9154eb3435175feb786b
+      internalID: 1595689096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_34
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa139507784eab4995f11bda2638d0c
+      internalID: -2001696661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_35
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12413aea0bbbf2439fd6b6598848235
+      internalID: 1730759824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_36
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0e4f1a9cef21144b6e8e3296943beb
+      internalID: 719585549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_37
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1360
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30954dcf8b779ca4a895ad264409c7da
+      internalID: -515284991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6513b906bc5fbd7478eff47a0bc562e0
+      internalID: -1343334354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_39
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8e6d387dd0c9f44a0b9b82afb53d32
+      internalID: -597265584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_40
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4386ad7d1e5bdf45bb70614fa64e437
+      internalID: 494037693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_41
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa15e73b094ce84eb745a8aeb663eb8
+      internalID: 1270611736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_42
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27062b89bdd9e534ca6027348d7c521e
+      internalID: -2017021595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_43
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbcefb7af69de74e9ab6da1319e6149
+      internalID: 2031539014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_44
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ba771e91fe95d438b442dff1fd5069
+      internalID: -386884820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_45
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3c660d932702b47a314c3bada90107
+      internalID: -1354498427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_46
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fb088e35e5a9c4c8552f21adcf25e7
+      internalID: -504808137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_47
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26e2fa1cfb6b1c45976007741c3c55c
+      internalID: -2080553787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_48
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2786e9d78476b4b97a1a4fa722c52e
+      internalID: -153865909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_49
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5ebff28dd0046469da8037092c9acd
+      internalID: 1055020996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_50
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7054b52eac76ac45856f72d055d2121
+      internalID: -1770128154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_51
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce223c1e10e1e04296c5eb077b1caf1
+      internalID: 1743280729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_52
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195263a7e7965884c9c543b00a8f56f9
+      internalID: -73335361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_53
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967b83c60f6cb6847b2ae6fc65a6bb41
+      internalID: -1455429752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_54
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291cbacedb4eb4f439635a1956b2a565
+      internalID: 437094909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_55
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eb1ea96b7f8ce4c8b3d7763e443346
+      internalID: -1197459291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_56
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1190
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270f3e4570b118b4f871f6cb6ff7a692
+      internalID: 737931992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8c1221ebe554b4989f258f7384dcdd
+      internalID: 1065310431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_58
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f687c1d0a29df0469c69c66eb77956a
+      internalID: 2009151189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_59
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf6038af13870b4c82abd661ada4f5a
+      internalID: 1197339515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_60
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aad46147c70f5349ac3471e67725b71
+      internalID: 912565613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_61
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd1b462f1cde154eb621ac3012b5a4a
+      internalID: -2072159160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_62
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b240eed9acb3ff47981b872dd0bf2b6
+      internalID: -1128557875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_63
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568b5528ea0907e4e8093f962d4b53e3
+      internalID: -1032288197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_64
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675b14122335ef249bacc7ad128e1243
+      internalID: -1424855808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_65
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ad999ee9654904abe84219aed32578
+      internalID: -1783735287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_66
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a303c8916f2b8459f79777224764f5
+      internalID: 1735578037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_67
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342e735b5fecfe14298291ea1ec8e85e
+      internalID: 1673598201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_68
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b90d46bfa14ff44999790da1395116
+      internalID: 1461744942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_69
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a60195568346c41bc4bf14cef5551c
+      internalID: 2121652092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_70
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987d821d3b6c7194dbe7d2c48a24cd4e
+      internalID: 633946431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_71
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1c8745a133f394db2e4c4284e00b72
+      internalID: 1274331343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_72
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76dc88c99cbc784e808997de344bb72
+      internalID: -519025726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_73
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56e6864738440149964b74938036000
+      internalID: -1191147478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_74
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5f415ef08996b4db02a29bda26262c
+      internalID: -1271732440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_75
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1020
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81bd45fc2b7c624f87862df341feec8
+      internalID: 203168053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c89281960f73c47be424bd3598715a
+      internalID: 895783060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_77
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753daa727d6ae954d99fbc38eba24061
+      internalID: -744731805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_78
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e12a4f78a5e2947ba9c0218855a15c
+      internalID: -1479863179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_79
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bcb4e163990ac47be011001117839a
+      internalID: 1789397685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_80
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ac12d05fe6ae842a6eb3e90ed49606
+      internalID: 852863939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_81
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af73dc70a52987f478d0199c4c82c0cb
+      internalID: -1490212793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_82
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52230e104a5f1b498111fd2ba3c2d37
+      internalID: 1611432154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_83
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01de8283b4d4c114abfd3b12281cc6f6
+      internalID: 705346467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_84
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03823b86c954714ab44cac4120169d0
+      internalID: 1816736041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_85
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83870324a14be4149890e83f84e7d022
+      internalID: -223889921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_86
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17904836e3a49894893ed0be3dbd74e3
+      internalID: 1160535392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_87
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78be22c11ecee2429dcef241f0c26c4
+      internalID: -2024416716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_88
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d351f47085f115469661c6b6638254a
+      internalID: 1162409669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_89
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada36b9d7c6fe3c4eb8c3e353c97ef23
+      internalID: -214685856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_90
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f8f70eb228efa468fe89e19214cca2
+      internalID: 465848717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_91
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b09e3802c17e5e4194dada995ee9dd4
+      internalID: 1200312810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_92
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6246a5a9401614a9ad490bdb4f2b4a
+      internalID: -1314152426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_93
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97280dfbe518ea49bedb93fce0db29b
+      internalID: 437283477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_94
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 850
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecc698d70eb0e345a2b4bf320fd2c49
+      internalID: 1644255459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0f129258d949740a32fdd5779e8d20
+      internalID: 670755706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_96
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa37ce030521cf246a206b7bd2ca88c3
+      internalID: 1435411280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_97
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638e8f92e8a853e449a3f23ffd3adc02
+      internalID: -1391789749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_98
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fad6e474d40964d8282212f90471e2
+      internalID: 1559773739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_99
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880820120f21b5648912f55d9053ae4e
+      internalID: 1099323689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_100
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf4bc8530b6bd9439712a80e37a10af
+      internalID: 486149448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_101
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3bf173e48f16f43bc7ae12df95e587
+      internalID: 2086300690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_102
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbdc451c0115b048968100069c7540b
+      internalID: -1147923576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_103
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b2e3732681dc94f8974e6dabd4115f
+      internalID: 1314727168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_104
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d38ec41d410b254d9e08220ad0022dc
+      internalID: 1607452263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_105
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68818d50c6532fb4f83d6e697f90e263
+      internalID: -596869306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_106
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e76b88c651396f4cb43634fe501800a
+      internalID: 1941009011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_107
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd48dbe3a04ff9b4e8bbcc844098cfc7
+      internalID: 601230859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_108
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1d0e172dea7704288da59b951efc2d
+      internalID: -670453324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_109
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda9e51551c863f4daef989b3bde496b
+      internalID: 737168848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_110
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbad7b4aa655d44faaa394a556deb52
+      internalID: -1606584628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_111
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dbcbc54b8cbaf42a57f5fa0368a18d
+      internalID: -1833261355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_112
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5132840a3dc7fd444b7a891936d74d7b
+      internalID: -1600743819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_113
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 680
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f306a6fb4129fec488305bca82ebec33
+      internalID: -733668737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a272bae2f85101d49b27e4e371b814b2
+      internalID: -718561241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_115
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5afa5247f6000540b49cf5698b7997c
+      internalID: -231561516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_116
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54755ea0309cb2c4a9be9b886c40c2f8
+      internalID: 1530567494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_117
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aec68a908778ea4db7ab8d920fc4bde
+      internalID: -906282751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_118
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7564d3fbf54c3d345a6ff2173608078f
+      internalID: 521004398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_119
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b821d2ab370794682d6b08039632fc
+      internalID: 1184738772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_120
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3625c8b294ee74e9a7f688912b840f
+      internalID: 1331700370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_121
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4ef5e37b6d3bc4f923c1b7d3fabf07
+      internalID: -249996017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_122
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f702869d0165a4996317332bebd979
+      internalID: -107389564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_123
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7b74a67cf14224d84891aeb6312fe3
+      internalID: 1173658376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_124
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e2cb14480503c4d97e49bb175ceb29
+      internalID: 736502073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_125
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41dcf62837a099429383fdf25568581
+      internalID: -374377833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_126
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ffe408137683049811f3117063a868
+      internalID: 1500374740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_127
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f344128aed1910341bf41d4314f4f2f0
+      internalID: -1462040551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_128
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee95ce9002022a43a426333154e6c70
+      internalID: 1210571931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_129
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e31fc95034c95479dc518c63822ed4
+      internalID: -1105905514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_130
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755c437f49338b94a97003844d36587b
+      internalID: 311600641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_131
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d12fcb53659a546b5d4c7be37ab465
+      internalID: 372796831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_132
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 510
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7df3212e4704244ca5b866a03278cf0
+      internalID: -1604700051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf7b1015c9eb1040b754f75b3644865
+      internalID: -38217807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_134
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bb657e843bd6a49b5d4ebadd123fd8
+      internalID: 284509433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_135
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d6923dd45207b4290114802681a88c
+      internalID: -1259099822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_136
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73165199be73bb3438f0005006576312
+      internalID: 513531815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_137
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f8ec447d07fe6498cd279403eeef23
+      internalID: -515324772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_138
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20eb8d7696664294c80b0339218f7e88
+      internalID: 2052582541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_139
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35394205dc8872e40b6777b5fcce163d
+      internalID: 1238678357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_140
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9a22676feb13f40896f5f2f45651de
+      internalID: 420529451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_141
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72132f5e750526c4e8af0877bdc63250
+      internalID: 2141157329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_142
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db14339a7eb4a6489a5b2744a49d02d
+      internalID: -1215610434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_143
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e065d33baf4a34599ddfd7bcff5842
+      internalID: -785675571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_144
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c312f6960e0c1b84da9b1c2aabf28e45
+      internalID: -996723673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_145
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86a3c452fd80b744a2fdcb08f73a6d8
+      internalID: 286297853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_146
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700cdffe65c7e93448087eb1d1732571
+      internalID: -828781868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_147
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcdbe7e7f21b374f8fd00861ad36a14
+      internalID: 1929599748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_148
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49081d70d53efed4083f052ab90781d1
+      internalID: 1246224474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_149
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0831b2e9a11aa468b840a59ccb6cb5
+      internalID: 133792279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_150
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0915c8cabf31e438592ae68f610429
+      internalID: -489667273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_151
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 340
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c56993d4d76c34eb86d675a4a8958f
+      internalID: -1407480427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8d68e6c078f1b45bea44501ff7f804
+      internalID: -431921477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_153
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1114d4cbb53dc43a74364fdd929f52
+      internalID: 1717652289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_154
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d37c4b3aa5f5254494a82ea77079ef6
+      internalID: 1691286381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_155
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2389ef25305d56e4499854b236a8c31d
+      internalID: -662474866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_156
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6381cb7779176344a1220652353eff4
+      internalID: -787122403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_157
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37038c999fdb7f345b1ffe3fff269f32
+      internalID: -469019528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_158
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fa3a8b1f7d93d4799b7f8fc97cc0fa
+      internalID: 470765463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_159
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cca05c3dffed8b43807e4195b2be58f
+      internalID: -495933214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_160
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48349a0c92ae354da0c74a8fb6a6e7c
+      internalID: 59067472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_161
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a482ad35e5df0c47851240c415d5aa3
+      internalID: -55812784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_162
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baa5bc4e625662469cdefbb011662df
+      internalID: 1502247508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_163
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14e7e51649c109419dc694e1d5db7eb
+      internalID: 202292044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_164
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2838d6619c68d41839ebdc09de3db4
+      internalID: -1302651504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_165
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0358f47c20115b8429e1d45be444bed4
+      internalID: -192729034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_166
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d19fbef395c87458bd1f5bf075dd15
+      internalID: 1819009857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_167
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a704ddb180722214dba39ec0861af8a7
+      internalID: 1003796203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_168
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f10883c41d7efd4a9da8c7a84bebefa
+      internalID: -1215025737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_169
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df837ea8459135f4680592c0dce93a30
+      internalID: -1774716242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_170
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 170
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc88651f8b93ad149973545b338502af
+      internalID: 1080050970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_171
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b86a078e845105479dbfdb67ef9ac7b
+      internalID: 672079574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_172
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847a27d971dcefc4bb88b1ca8a473c69
+      internalID: 1036612928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_173
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c836f8108c114e4bbea966f7ffd3a04
+      internalID: 1511674080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_174
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d724afc11a8009744b752044c9619409
+      internalID: 271920672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_175
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c9df02e5e8a99428fcbad1c091736d
+      internalID: 1009334090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_176
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db01057121a32184bad8f9bbda2534f2
+      internalID: -1493036551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_177
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166bbe1749dd94b4d984b71b283b5d8a
+      internalID: -1168940070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_178
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f67d805e5e600d4cbe396079c1f7a38
+      internalID: 227678062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_179
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee67ca62857e0d42b66584058566586
+      internalID: 802848685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_180
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51720d46af85529418e5daab6684525d
+      internalID: 238132464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_181
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cbe1007f2a4e44487a0cbdf6c76164
+      internalID: 237962384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_182
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4142bfa971e9844a611aba33ff69f1
+      internalID: 459250619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_183
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490bb46e758563c44baa8fac750063c1
+      internalID: -1360044688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_184
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3d09074fdacab419ad217939829003
+      internalID: -301070121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_185
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6d193ce776a0b4d8073bbd8d9021b7
+      internalID: 1152304686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_186
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64044db13fd4f141b743dd90a47b2e5
+      internalID: -466010536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_187
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c8fc47d28ec3f43a48b94933f3837b
+      internalID: -1921346699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_188
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16406a8966c47b45a0a951a0c229c21
+      internalID: 102015954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS_MIKA170X170_189
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c24646a6c9a1b44ab976ad319df205
+      internalID: 763301589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 95ba76c72d6fbde48908c1ea3ca040d4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":170.0,"y":170.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ATLAS_MIKA170X170_0: -7161746339752336627
+      ATLAS_MIKA170X170_1: 9053449889471878505
+      ATLAS_MIKA170X170_10: 2039177707
+      ATLAS_MIKA170X170_100: 486149448
+      ATLAS_MIKA170X170_101: 2086300690
+      ATLAS_MIKA170X170_102: -1147923576
+      ATLAS_MIKA170X170_103: 1314727168
+      ATLAS_MIKA170X170_104: 1607452263
+      ATLAS_MIKA170X170_105: -596869306
+      ATLAS_MIKA170X170_106: 1941009011
+      ATLAS_MIKA170X170_107: 601230859
+      ATLAS_MIKA170X170_108: -670453324
+      ATLAS_MIKA170X170_109: 737168848
+      ATLAS_MIKA170X170_11: 320779570
+      ATLAS_MIKA170X170_110: -1606584628
+      ATLAS_MIKA170X170_111: -1833261355
+      ATLAS_MIKA170X170_112: -1600743819
+      ATLAS_MIKA170X170_113: -733668737
+      ATLAS_MIKA170X170_114: -718561241
+      ATLAS_MIKA170X170_115: -231561516
+      ATLAS_MIKA170X170_116: 1530567494
+      ATLAS_MIKA170X170_117: -906282751
+      ATLAS_MIKA170X170_118: 521004398
+      ATLAS_MIKA170X170_119: 1184738772
+      ATLAS_MIKA170X170_12: 1564877896
+      ATLAS_MIKA170X170_120: 1331700370
+      ATLAS_MIKA170X170_121: -249996017
+      ATLAS_MIKA170X170_122: -107389564
+      ATLAS_MIKA170X170_123: 1173658376
+      ATLAS_MIKA170X170_124: 736502073
+      ATLAS_MIKA170X170_125: -374377833
+      ATLAS_MIKA170X170_126: 1500374740
+      ATLAS_MIKA170X170_127: -1462040551
+      ATLAS_MIKA170X170_128: 1210571931
+      ATLAS_MIKA170X170_129: -1105905514
+      ATLAS_MIKA170X170_13: -1758830834
+      ATLAS_MIKA170X170_130: 311600641
+      ATLAS_MIKA170X170_131: 372796831
+      ATLAS_MIKA170X170_132: -1604700051
+      ATLAS_MIKA170X170_133: -38217807
+      ATLAS_MIKA170X170_134: 284509433
+      ATLAS_MIKA170X170_135: -1259099822
+      ATLAS_MIKA170X170_136: 513531815
+      ATLAS_MIKA170X170_137: -515324772
+      ATLAS_MIKA170X170_138: 2052582541
+      ATLAS_MIKA170X170_139: 1238678357
+      ATLAS_MIKA170X170_14: -29577979
+      ATLAS_MIKA170X170_140: 420529451
+      ATLAS_MIKA170X170_141: 2141157329
+      ATLAS_MIKA170X170_142: -1215610434
+      ATLAS_MIKA170X170_143: -785675571
+      ATLAS_MIKA170X170_144: -996723673
+      ATLAS_MIKA170X170_145: 286297853
+      ATLAS_MIKA170X170_146: -828781868
+      ATLAS_MIKA170X170_147: 1929599748
+      ATLAS_MIKA170X170_148: 1246224474
+      ATLAS_MIKA170X170_149: 133792279
+      ATLAS_MIKA170X170_15: 1385013693
+      ATLAS_MIKA170X170_150: -489667273
+      ATLAS_MIKA170X170_151: -1407480427
+      ATLAS_MIKA170X170_152: -431921477
+      ATLAS_MIKA170X170_153: 1717652289
+      ATLAS_MIKA170X170_154: 1691286381
+      ATLAS_MIKA170X170_155: -662474866
+      ATLAS_MIKA170X170_156: -787122403
+      ATLAS_MIKA170X170_157: -469019528
+      ATLAS_MIKA170X170_158: 470765463
+      ATLAS_MIKA170X170_159: -495933214
+      ATLAS_MIKA170X170_16: 742503489
+      ATLAS_MIKA170X170_160: 59067472
+      ATLAS_MIKA170X170_161: -55812784
+      ATLAS_MIKA170X170_162: 1502247508
+      ATLAS_MIKA170X170_163: 202292044
+      ATLAS_MIKA170X170_164: -1302651504
+      ATLAS_MIKA170X170_165: -192729034
+      ATLAS_MIKA170X170_166: 1819009857
+      ATLAS_MIKA170X170_167: 1003796203
+      ATLAS_MIKA170X170_168: -1215025737
+      ATLAS_MIKA170X170_169: -1774716242
+      ATLAS_MIKA170X170_17: 54557343
+      ATLAS_MIKA170X170_170: 1080050970
+      ATLAS_MIKA170X170_171: 672079574
+      ATLAS_MIKA170X170_172: 1036612928
+      ATLAS_MIKA170X170_173: 1511674080
+      ATLAS_MIKA170X170_174: 271920672
+      ATLAS_MIKA170X170_175: 1009334090
+      ATLAS_MIKA170X170_176: -1493036551
+      ATLAS_MIKA170X170_177: -1168940070
+      ATLAS_MIKA170X170_178: 227678062
+      ATLAS_MIKA170X170_179: 802848685
+      ATLAS_MIKA170X170_18: -366400859
+      ATLAS_MIKA170X170_180: 238132464
+      ATLAS_MIKA170X170_181: 237962384
+      ATLAS_MIKA170X170_182: 459250619
+      ATLAS_MIKA170X170_183: -1360044688
+      ATLAS_MIKA170X170_184: -301070121
+      ATLAS_MIKA170X170_185: 1152304686
+      ATLAS_MIKA170X170_186: -466010536
+      ATLAS_MIKA170X170_187: -1921346699
+      ATLAS_MIKA170X170_188: 102015954
+      ATLAS_MIKA170X170_189: 763301589
+      ATLAS_MIKA170X170_19: 702787935
+      ATLAS_MIKA170X170_2: 63245404
+      ATLAS_MIKA170X170_20: -455523769
+      ATLAS_MIKA170X170_21: 1541956776
+      ATLAS_MIKA170X170_22: 1455152942
+      ATLAS_MIKA170X170_23: 390680213
+      ATLAS_MIKA170X170_24: 512042614
+      ATLAS_MIKA170X170_25: -90896437
+      ATLAS_MIKA170X170_26: 444414792
+      ATLAS_MIKA170X170_27: -1926505504
+      ATLAS_MIKA170X170_28: 2033331749
+      ATLAS_MIKA170X170_29: -479124335
+      ATLAS_MIKA170X170_3: 1100640411
+      ATLAS_MIKA170X170_30: 935975305
+      ATLAS_MIKA170X170_31: -91089893
+      ATLAS_MIKA170X170_32: 465345926
+      ATLAS_MIKA170X170_33: 1595689096
+      ATLAS_MIKA170X170_34: -2001696661
+      ATLAS_MIKA170X170_35: 1730759824
+      ATLAS_MIKA170X170_36: 719585549
+      ATLAS_MIKA170X170_37: -515284991
+      ATLAS_MIKA170X170_38: -1343334354
+      ATLAS_MIKA170X170_39: -597265584
+      ATLAS_MIKA170X170_4: 314614809
+      ATLAS_MIKA170X170_40: 494037693
+      ATLAS_MIKA170X170_41: 1270611736
+      ATLAS_MIKA170X170_42: -2017021595
+      ATLAS_MIKA170X170_43: 2031539014
+      ATLAS_MIKA170X170_44: -386884820
+      ATLAS_MIKA170X170_45: -1354498427
+      ATLAS_MIKA170X170_46: -504808137
+      ATLAS_MIKA170X170_47: -2080553787
+      ATLAS_MIKA170X170_48: -153865909
+      ATLAS_MIKA170X170_49: 1055020996
+      ATLAS_MIKA170X170_5: 1897553720
+      ATLAS_MIKA170X170_50: -1770128154
+      ATLAS_MIKA170X170_51: 1743280729
+      ATLAS_MIKA170X170_52: -73335361
+      ATLAS_MIKA170X170_53: -1455429752
+      ATLAS_MIKA170X170_54: 437094909
+      ATLAS_MIKA170X170_55: -1197459291
+      ATLAS_MIKA170X170_56: 737931992
+      ATLAS_MIKA170X170_57: 1065310431
+      ATLAS_MIKA170X170_58: 2009151189
+      ATLAS_MIKA170X170_59: 1197339515
+      ATLAS_MIKA170X170_6: 604231613
+      ATLAS_MIKA170X170_60: 912565613
+      ATLAS_MIKA170X170_61: -2072159160
+      ATLAS_MIKA170X170_62: -1128557875
+      ATLAS_MIKA170X170_63: -1032288197
+      ATLAS_MIKA170X170_64: -1424855808
+      ATLAS_MIKA170X170_65: -1783735287
+      ATLAS_MIKA170X170_66: 1735578037
+      ATLAS_MIKA170X170_67: 1673598201
+      ATLAS_MIKA170X170_68: 1461744942
+      ATLAS_MIKA170X170_69: 2121652092
+      ATLAS_MIKA170X170_7: 505163915
+      ATLAS_MIKA170X170_70: 633946431
+      ATLAS_MIKA170X170_71: 1274331343
+      ATLAS_MIKA170X170_72: -519025726
+      ATLAS_MIKA170X170_73: -1191147478
+      ATLAS_MIKA170X170_74: -1271732440
+      ATLAS_MIKA170X170_75: 203168053
+      ATLAS_MIKA170X170_76: 895783060
+      ATLAS_MIKA170X170_77: -744731805
+      ATLAS_MIKA170X170_78: -1479863179
+      ATLAS_MIKA170X170_79: 1789397685
+      ATLAS_MIKA170X170_8: 1219365269
+      ATLAS_MIKA170X170_80: 852863939
+      ATLAS_MIKA170X170_81: -1490212793
+      ATLAS_MIKA170X170_82: 1611432154
+      ATLAS_MIKA170X170_83: 705346467
+      ATLAS_MIKA170X170_84: 1816736041
+      ATLAS_MIKA170X170_85: -223889921
+      ATLAS_MIKA170X170_86: 1160535392
+      ATLAS_MIKA170X170_87: -2024416716
+      ATLAS_MIKA170X170_88: 1162409669
+      ATLAS_MIKA170X170_89: -214685856
+      ATLAS_MIKA170X170_9: 617333395
+      ATLAS_MIKA170X170_90: 465848717
+      ATLAS_MIKA170X170_91: 1200312810
+      ATLAS_MIKA170X170_92: -1314152426
+      ATLAS_MIKA170X170_93: 437283477
+      ATLAS_MIKA170X170_94: 1644255459
+      ATLAS_MIKA170X170_95: 670755706
+      ATLAS_MIKA170X170_96: 1435411280
+      ATLAS_MIKA170X170_97: -1391789749
+      ATLAS_MIKA170X170_98: 1559773739
+      ATLAS_MIKA170X170_99: 1099323689
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

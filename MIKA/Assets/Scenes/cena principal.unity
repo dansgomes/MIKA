@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &161432359
 SpriteRenderer:
   serializedVersion: 2
@@ -445,8 +445,8 @@ Transform:
   m_GameObject: {fileID: 266248974}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 7.60816, y: -2.3149, z: -0.15}
-  m_LocalScale: {x: 3.2620103, y: 5.619012, z: 1}
+  m_LocalPosition: {x: 7.5453, y: -1.2871, z: -0.15}
+  m_LocalScale: {x: 5.317619, y: 6.4298353, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 540815908}
@@ -709,7 +709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &731422924
 SpriteRenderer:
   serializedVersion: 2
@@ -1193,8 +1193,8 @@ Transform:
   m_GameObject: {fileID: 1599029693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6769, y: -0.779, z: 0}
-  m_LocalScale: {x: 5.524618, y: 0.17455477, z: 1}
+  m_LocalPosition: {x: 7.624, y: 1.2167, z: 0}
+  m_LocalScale: {x: 6.3218203, y: 0.28455326, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 540815908}
@@ -1546,7 +1546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1776717387
 SpriteRenderer:
   serializedVersion: 2
@@ -1712,7 +1712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1873350966
 Rigidbody2D:
   serializedVersion: 5
@@ -1909,7 +1909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &2123341830
 Rigidbody2D:
   serializedVersion: 5
@@ -2078,7 +2078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2144674295
 SpriteRenderer:
   serializedVersion: 2
