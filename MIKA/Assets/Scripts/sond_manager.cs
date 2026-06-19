@@ -7,6 +7,12 @@ public class sond_manager : MonoBehaviour
     private AudioSource sond_effects;
     private AudioSource sond_background;
 
+    public void UpdateVolume()
+    {
+        sond_effects.volume = master_setting.Instance.sond_effect / 10f;
+        sond_background.volume = master_setting.Instance.music / 10f;
+    }
+
     [System.Serializable] public struct SoundClip
     {
         public string soundName;
@@ -28,6 +34,13 @@ private void Awake()
     }
 
 
+public void StopMusic()
+{
+    sond_background.Stop();
+}
+
+
+
 void Start()
 {
     sond_effects = transform.GetChild(0).GetComponent<AudioSource>();
@@ -47,7 +60,10 @@ public void play_sond_background(string musicName)
         }
         if (HasFoundMusic == true)
         {
-            sond_background.PlayOneShot(SoundTrack[musicIndex].soundClip);
+            sond_background.clip = SoundTrack[musicIndex].soundClip;
+            sond_background.Play();
+
+            sond_background.loop = true;
         }
         else
         {
@@ -59,7 +75,7 @@ public void play_sond_background(string musicName)
         
         sond_effects = transform.GetChild(0).GetComponent<AudioSource>();
         sond_background = transform.GetChild(1).GetComponent<AudioSource>();
-        Debug.Log("sond_effects = " + sond_effects);
+        
         bool HasFoundMusic = false;
         int musicIndex = -1;
         for (int i=0; i< SoundEffects.Count; i++)

@@ -16,11 +16,14 @@ public class Menu : MonoBehaviour
         settings_button.onClick.AddListener(settings_game);
         credits_button.onClick.AddListener(credits_game);
         exit_button.onClick.AddListener(exit_game);
+
+        sond_manager.instance.play_sond_background("fundo");
     }
     //BOTÃO JOGAR
     public void start_game()
     {
         SceneManager.LoadScene("cutscene_00");
+        sond_manager.instance.StopMusic();
         sond_manager.instance.play_sond_effects("pac");
     }
     

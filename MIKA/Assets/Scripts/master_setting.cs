@@ -22,4 +22,20 @@ public class master_setting : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
+    public void SetEffectVolume(int value)
+    {
+        sond_effect = Mathf.Clamp(value, 0, 10);
+
+        if (sond_manager.instance != null)
+            sond_manager.instance.UpdateVolume();
+    }
+
+    public void SetMusicVolume(int value)
+    {
+        music = Mathf.Clamp(value, 0, 10);
+
+        if (sond_manager.instance != null)
+            sond_manager.instance.UpdateVolume();
+    }
 }
