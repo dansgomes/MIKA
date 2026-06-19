@@ -43,7 +43,9 @@ public class se : MonoBehaviour
 	{
 		if (master_setting.Instance.sond_effect>0)
 		{
-			master_setting.Instance.sond_effect -=1;
+			master_setting.Instance.SetEffectVolume(
+            master_setting.Instance.sond_effect - 1);
+
 			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
@@ -52,7 +54,9 @@ public class se : MonoBehaviour
 	{
 		if (master_setting.Instance.sond_effect<10)
 		{
-			master_setting.Instance.sond_effect +=1;
+			master_setting.Instance.SetEffectVolume(
+            master_setting.Instance.sond_effect + 1);
+
 			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
@@ -61,7 +65,9 @@ public class se : MonoBehaviour
 	{
 		if (master_setting.Instance.music>0)
 		{
-			master_setting.Instance.music -=1;
+			master_setting.Instance.SetMusicVolume(
+            master_setting.Instance.music - 1);
+
 			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
@@ -70,7 +76,9 @@ public class se : MonoBehaviour
 	{
 		if (master_setting.Instance.music<10)
 		{
-			master_setting.Instance.music +=1;
+			master_setting.Instance.SetMusicVolume(
+            master_setting.Instance.music + 1);
+
 			sond_manager.instance.play_sond_effects("pac");
 		}
 	}
