@@ -13,7 +13,7 @@ public class Mika : MonoBehaviour
     private Vector2 targetHangingPosition;
 
 
-    private InputSystem_Actions playerinput;
+   private InputSystem_Actions playerinput;
    private InputAction move;
    private InputAction jump;
    private Rigidbody2D rb;
