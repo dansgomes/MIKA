@@ -33,11 +33,13 @@ public class BoxInteract : MonoBehaviour
         switch (interaction)
         {
             case InteractionTypes.Alone:
-                rb.bodyType = RigidbodyType2D.Static;
+                rb.bodyType = RigidbodyType2D.Dynamic;
+                rb.mass = 15;
                 break;
 
             case InteractionTypes.Hand:
                 rb.bodyType = RigidbodyType2D.Dynamic;
+                rb.mass = 1;
                 break;
         }
     }

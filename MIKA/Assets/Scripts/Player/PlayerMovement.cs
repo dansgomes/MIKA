@@ -1,8 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //evento disparado sempre que pula
+    public event Action OnJumped;
+
     [Header("Movement")]
     //referencia ao rigidbody do player
     public Rigidbody2D rb;
@@ -42,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpPower = 10f;
     //bool de verificação da direção que o player está olhando
     public bool isFacingRight = true;
-    //bool de verificação se pode pular (consumido ao pular, restaurado no chão)
+    //bool de verificação se pode pular
     bool canJumpNow;
 
     //direção horizontal que o player está olhando
@@ -90,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform ledgeTopCheckPos;
     //distância dos raycasts de detecção
     public float ledgeCheckDistance = 0.5f;
-    //deslocamento aplicado ao subir a quina 
+    //deslocamento aplicado ao subir a quina
     public Vector2 ledgeClimbOffset = new Vector2(0.3f, 1f);
     //duração da animação de subida da quina
     public float ledgeClimbDuration = 0.25f;
@@ -160,9 +164,9 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 facingDirection = new Vector2(isFacingRight ? 1f : -1f, 0f);
 
-        //raycast na altura do peito deve bater na parede
+        //raycast na altura do peito: deve bater na parede
         RaycastHit2D wallHit = Physics2D.Raycast(ledgeWallCheckPos.position, facingDirection, ledgeCheckDistance, ledgeLayer);
-        //raycast acima da cabeça não deve bater em nada
+        //raycast acima da cabeça: não deve bater em nada
         RaycastHit2D topHit = Physics2D.Raycast(ledgeTopCheckPos.position, facingDirection, ledgeCheckDistance, ledgeLayer);
 
         return wallHit.collider != null && topHit.collider == null;
@@ -189,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(ClimbLedgeRoutine());
         }
-        //apertou para baixo: solta a quina
+        //apertou para baixo, solta a quina
         else if (verticalInput < -0.1f)
         {
             DropFromLedge();
@@ -280,7 +284,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (spriteRenderer == null) return;
 
-        //deixa o sprite opaco ao agachar
+        //deixa o sprite semi-transparente ao agachar
         Color color = spriteRenderer.color;
         color.a = isCrouching ? crouchOpacity : 1f;
         spriteRenderer.color = color;
@@ -300,6 +304,7 @@ public class PlayerMovement : MonoBehaviour
                 isLedgeGrabbed = false;
                 rb.gravityScale = baseGravity;
                 rb.linearVelocity = new Vector2(-(isFacingRight ? 1f : -1f) * jumpPower, jumpPower);
+                OnJumped?.Invoke();
                 return;
             }
 
@@ -308,6 +313,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
                 canJumpNow = false;
+                OnJumped?.Invoke();
             }
         }
         else if (context.canceled)
@@ -325,6 +331,8 @@ public class PlayerMovement : MonoBehaviour
         inGround = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);
         canJump = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, wallLayer);
 
+        //só restaura o pulo disponível se estiver no chão/parede E não estiver subindo
+        //(evita re-liberar o pulo no mesmo frame em que ele decolou, antes de saída da caixa de detecção)
         if ((inGround || canJump) && rb.linearVelocity.y <= 0.01f)
         {
             canJumpNow = true;

@@ -24,11 +24,15 @@ public class PlayerInteractable : MonoBehaviour
     {
         interact = playerinput.player.interact;
         interact.Enable();
+
+        playerMovement.OnJumped += ReleaseBox;
     }
 
     void OnDisable()
     {
         interact.Disable();
+
+        playerMovement.OnJumped -= ReleaseBox;
     }
 
     void Start()
@@ -57,16 +61,23 @@ public class PlayerInteractable : MonoBehaviour
         }
         else if (interact.WasPressedThisFrame() && box != null)
         {
-            box.GetComponent<FixedJoint2D>().enabled = false;
-
-            BoxInteract boxScript = box.GetComponent<BoxInteract>();
-            if (boxScript != null)
-            {
-                boxScript.Interaction = InteractionTypes.Alone;
-            }
-
-            box = null;
+            ReleaseBox();
         }
+    }
+
+    private void ReleaseBox()
+    {
+        if (box == null) return;
+
+        box.GetComponent<FixedJoint2D>().enabled = false;
+
+        BoxInteract boxScript = box.GetComponent<BoxInteract>();
+        if (boxScript != null)
+        {
+            boxScript.Interaction = InteractionTypes.Alone;
+        }
+
+        box = null;
     }
 
     void OnDrawGizmos()
