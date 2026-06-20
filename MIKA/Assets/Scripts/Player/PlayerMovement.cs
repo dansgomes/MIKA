@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
     //entrada horizontal e vertical do jogador
     float horizontalMovement;
     float verticalInput;
-    //direção atual do movimento (-1, 0 ou 1)
-    private int currentDirection = 0;
 
     [Header("Run")]
     //multiplicador de velocidade ao correr
@@ -43,11 +41,12 @@ public class PlayerMovement : MonoBehaviour
     //força do pulo
     public float jumpPower = 10f;
     //bool de verificação da direção que o player está olhando
-    bool isFacingRight = true;
-    //numero máximo de pulos permitidos
-    public int maxJumps = 2;
-    //pulos restantes disponíveis
-    int jumpsRemaining;
+    public bool isFacingRight = true;
+    //bool de verificação se pode pular (consumido ao pular, restaurado no chão)
+    bool canJumpNow;
+
+    //direção horizontal que o player está olhando
+    public Vector2 FacingDirection => new Vector2(isFacingRight ? 1f : -1f, 0f);
 
     [Header("Ground Check")]
     //posição do pivot de chão
@@ -81,47 +80,6 @@ public class PlayerMovement : MonoBehaviour
     //velocidade de deslizamento na parede
     public float wallSlideSpeed = 2;
     //bool de verificação se está deslizando na parede
-    bool isWallSliding;
-
-    [Header("Wall Jump")]
-    //bool de verificação se está em wall jump
-    bool isWallJumping;
-    //direção do wall jump
-    float wallJumpDirection;
-    //janela de tempo para executar o wall jump
-    float wallJumpTime = 0.3f;
-    //timer da janela de wall jump
-    float wallJumpTimer;
-    //força do wall jump (x = horizontal, y = vertical)
-    public Vector2 wallJumpPower = new Vector2(5f, 10f);
-    //bool de verificação se pode executar wall jump
-    bool canWallJump = false;
-
-    [Header("Dash")]
-    //velocidade do dash
-    public float dashSpeed = 12f;
-    //duração do dash
-    public float dashDuration = 0.2f;
-    //cooldown entre dashes
-    public float dashCooldown = 0.5f;
-    //tempo de suavização ao sair do dash
-    public float dashEndSmoothTime = 0.15f;
-    //duração da suavização ao sair do dash
-    public float dashEndSmoothDuration = 0.2f;
-    //bool de verificação se está em dash
-    bool isDashing;
-    //timer de duração do dash
-    float dashTimer;
-    //timestamp do ultimo dash executado
-    float lastDashTime;
-    //ultima direção registrada antes do dash
-    int lastDirection;
-    //timer da suavização pós-dash
-    float dashEndSmoothTimer;
-
-    [Header("Wall Climb")]
-    //velocidade de escalada na parede
-    public float wallClimbSpeed = 2f;
 
     [Header("Ledge Grab")]
     //camada de verificação de quina
@@ -132,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform ledgeTopCheckPos;
     //distância dos raycasts de detecção
     public float ledgeCheckDistance = 0.5f;
-    //deslocamento aplicado ao subir a quina (x = frente, y = cima)
+    //deslocamento aplicado ao subir a quina 
     public Vector2 ledgeClimbOffset = new Vector2(0.3f, 1f);
     //duração da animação de subida da quina
     public float ledgeClimbDuration = 0.25f;
@@ -183,55 +141,12 @@ public class PlayerMovement : MonoBehaviour
         //aplica a gravidade customizada
         Gravity();
 
-        //processa o deslize e pulo de parede
-        ProcessWallSlide();
-        ProcessWallJump();
-
-        //sobe na parede se estiver deslizando e apertar para cima
-        if (isWallSliding && verticalInput > 0.1f)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, wallClimbSpeed);
-        }
-
-        //processa o dash ativo, contando o timer e aplicando a velocidade
-        if (isDashing)
-        {
-            dashTimer -= Time.deltaTime;
-
-            if (dashTimer <= 0f)
-            {
-                //finaliza o dash e inicia a suavização de saída
-                isDashing = false;
-                dashEndSmoothTimer = dashEndSmoothDuration;
-            }
-            else
-            {
-                //mantém a velocidade do dash e interrompe o resto da lógica
-                rb.linearVelocity = new Vector2(lastDirection * dashSpeed, 0f);
-                GroundCheck();
-                return;
-            }
-        }
-
         //aplica o movimento horizontal com suavização
-        if (!isWallJumping && !isDashing)
-        {
-            float smoothTime = accelerationTime;
+        float targetSpeed = moveSpeed * (isRunning ? runSpeedMultiplier : 1f);
+        currentVelocityX = Mathf.SmoothDamp(rb.linearVelocity.x, horizontalMovement * targetSpeed, ref velocityXSmoothing, accelerationTime);
+        rb.linearVelocity = new Vector2(currentVelocityX, rb.linearVelocity.y);
 
-            //usa suavização maior logo após o dash acabar
-            if (dashEndSmoothTimer > 0f)
-            {
-                dashEndSmoothTimer -= Time.deltaTime;
-                smoothTime = dashEndSmoothTime;
-            }
-
-            //calcula a velocidade alvo e aplica via SmoothDamp
-            float targetSpeed = moveSpeed * (isRunning ? runSpeedMultiplier : 1f);
-            currentVelocityX = Mathf.SmoothDamp(rb.linearVelocity.x, horizontalMovement * targetSpeed, ref velocityXSmoothing, smoothTime);
-            rb.linearVelocity = new Vector2(currentVelocityX, rb.linearVelocity.y);
-
-            Flip();
-        }
+        Flip();
     }
 
     //retorna true se há uma parede no pivot de verificação
@@ -245,9 +160,9 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 facingDirection = new Vector2(isFacingRight ? 1f : -1f, 0f);
 
-        //raycast na altura do peito: deve bater na parede
+        //raycast na altura do peito deve bater na parede
         RaycastHit2D wallHit = Physics2D.Raycast(ledgeWallCheckPos.position, facingDirection, ledgeCheckDistance, ledgeLayer);
-        //raycast acima da cabeça: não deve bater em nada
+        //raycast acima da cabeça não deve bater em nada
         RaycastHit2D topHit = Physics2D.Raycast(ledgeTopCheckPos.position, facingDirection, ledgeCheckDistance, ledgeLayer);
 
         return wallHit.collider != null && topHit.collider == null;
@@ -269,7 +184,7 @@ public class PlayerMovement : MonoBehaviour
         //mantém o player parado enquanto pendurado
         rb.linearVelocity = Vector2.zero;
 
-        //apertou para cima: inicia a subida
+        //apertou para cima, inicia a subida
         if (verticalInput > 0.1f)
         {
             StartCoroutine(ClimbLedgeRoutine());
@@ -329,60 +244,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    //controla o deslizamento na parede enquanto o player se move contra ela no ar
-    private void ProcessWallSlide()
-    {
-        if (!inGround && WallCheck() && horizontalMovement != 0)
-        {
-            isWallSliding = true;
-            //limita a velocidade de queda ao valor do slide
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Max(rb.linearVelocity.y, -wallSlideSpeed));
-        }
-        else
-        {
-            isWallSliding = false;
-        }
-    }
-
-    //gerencia a janela de tempo disponível para executar o wall jump
-    private void ProcessWallJump()
-    {
-        if (isWallSliding)
-        {
-            //enquanto na parede, mantém a janela aberta e registra a direção
-            canWallJump = true;
-            wallJumpDirection = -Mathf.Sign(transform.localScale.x);
-            wallJumpTimer = wallJumpTime;
-            CancelInvoke(nameof(CancelWallJump));
-        }
-        else
-        {
-            //conta o timer e fecha a janela quando expirar
-            wallJumpTimer -= Time.deltaTime;
-            if (wallJumpTimer <= 0f)
-                canWallJump = false;
-        }
-    }
-
-    //encerra o estado de wall jump, devolvendo controle ao movimento normal
-    private void CancelWallJump()
-    {
-        isWallJumping = false;
-    }
-
-    //callback de input: lê o movimento horizontal e vertical
+    //callback de input, lê o movimento horizontal e vertical
     public void Move(InputAction.CallbackContext context)
     {
         Vector2 input = context.ReadValue<Vector2>();
         horizontalMovement = input.x;
         verticalInput = input.y;
-
-        //registra a direção atual para uso no dash
-        if (horizontalMovement != 0)
-            currentDirection = (int)Mathf.Sign(horizontalMovement);
     }
 
-    //callback de input: ativa e desativa o estado de corrida
+    //callback de input, ativa e desativa o estado de corrida
     public void Run(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -391,7 +261,7 @@ public class PlayerMovement : MonoBehaviour
             isRunning = false;
     }
 
-    //callback de input: ativa e desativa o agachamento
+    //callback de input, ativa e desativa o agachamento
     public void Crouch(InputAction.CallbackContext context)
     {
         //não pode agachar correndo ou no ar
@@ -410,13 +280,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (spriteRenderer == null) return;
 
-        //deixa o sprite semi-transparente ao agachar
+        //deixa o sprite opaco ao agachar
         Color color = spriteRenderer.color;
         color.a = isCrouching ? crouchOpacity : 1f;
         spriteRenderer.color = color;
     }
 
-    //callback de input: processa pulo, wall jump e pulo de quina
+    //callback de input, processa o pulo simples e o pulo de quina
     public void Jump(InputAction.CallbackContext context)
     {
         //bloqueia o pulo durante a animação de subida de quina
@@ -424,42 +294,20 @@ public class PlayerMovement : MonoBehaviour
 
         if (context.performed)
         {
-            //pulo de quina: empurra o player na direção oposta à parede
+            //pulo de quina
             if (isLedgeGrabbed)
             {
                 isLedgeGrabbed = false;
                 rb.gravityScale = baseGravity;
-                rb.linearVelocity = new Vector2(-(isFacingRight ? 1f : -1f) * wallJumpPower.x, wallJumpPower.y);
+                rb.linearVelocity = new Vector2(-(isFacingRight ? 1f : -1f) * jumpPower, jumpPower);
                 return;
             }
 
-            //wall jump: empurra o player para longe da parede
-            if (canWallJump)
-            {
-                isWallJumping = true;
-                canWallJump = false;
-
-                rb.linearVelocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
-                wallJumpTimer = 0f;
-
-                //inverte o sprite se o wall jump mudar a direção
-                if ((wallJumpDirection > 0 && transform.localScale.x < 0) ||
-                    (wallJumpDirection < 0 && transform.localScale.x > 0))
-                {
-                    isFacingRight = !isFacingRight;
-                    Vector3 ls = transform.localScale;
-                    ls.x *= -1f;
-                    transform.localScale = ls;
-                }
-
-                //encerra o wall jump após o tempo configurado
-                Invoke(nameof(CancelWallJump), wallJumpTime + 0.1f);
-            }
-            //pulo normal: consome um pulo disponível
-            else if (jumpsRemaining > 0)
+            //pulo normal
+            if (canJumpNow && (inGround || canJump))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-                jumpsRemaining--;
+                canJumpNow = false;
             }
         }
         else if (context.canceled)
@@ -471,48 +319,20 @@ public class PlayerMovement : MonoBehaviour
 
     //O Jogo (só pra saber se tu tá esperto msm kkkkk)
 
-    //callback de input: executa o dash na direção atual se o cooldown permitir
-    public void Dash(InputAction.CallbackContext context)
-    {
-        //bloqueia o dash durante grab ou subida de quina
-        if (isLedgeGrabbed || isLedgeClimbing) return;
-
-        if (context.performed && !isDashing && Time.time - lastDashTime > dashCooldown)
-        {
-            if (currentDirection != 0)
-            {
-                //inicia o dash registrando direção, timer e timestamp
-                lastDirection = currentDirection;
-                isDashing = true;
-                dashTimer = dashDuration;
-                lastDashTime = Time.time;
-                rb.linearVelocity = new Vector2(lastDirection * dashSpeed, 0f);
-            }
-        }
-    }
-
-    //verifica se está no chão ou na parede e gerencia os pulos disponíveis
+    //verifica se está no chão ou na parede e gerencia a liberação do pulo
     private void GroundCheck()
     {
         inGround = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);
         canJump = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, wallLayer);
 
-        //restaura os pulos ao tocar o chão ou a parede
-        if (inGround || canJump)
+        if ((inGround || canJump) && rb.linearVelocity.y <= 0.01f)
         {
-            jumpsRemaining = maxJumps;
-        }
-
-        //cancela o wall jump ao pousar no chão
-        if (inGround && isWallJumping)
-        {
-            CancelInvoke(nameof(CancelWallJump));
-            isWallJumping = false;
+            canJumpNow = true;
         }
     }
 
     //inverte o sprite e a flag de direção quando o movimento muda de lado
-    private void Flip()
+    public void Flip()
     {
         if ((isFacingRight && horizontalMovement < 0) || (!isFacingRight && horizontalMovement > 0))
         {
@@ -533,7 +353,7 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(wallCheckPos.position, wallCheckSize);
 
-        //raio de detecção de quina (inferior)
+        //raio de detecção de quina
         if (ledgeWallCheckPos != null)
         {
             Gizmos.color = Color.green;
@@ -541,7 +361,7 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.DrawLine(ledgeWallCheckPos.position, (Vector2)ledgeWallCheckPos.position + dir);
         }
 
-        //raio de detecção de quina (superior)
+        //raio de detecção de quina
         if (ledgeTopCheckPos != null)
         {
             Gizmos.color = Color.yellow;

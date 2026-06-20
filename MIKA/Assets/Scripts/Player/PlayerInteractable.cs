@@ -9,11 +9,17 @@ public class PlayerInteractable : MonoBehaviour
     private InputSystem_Actions playerinput;
     private InputAction interact;
 
+    private PlayerMovement playerMovement;
+
     private GameObject box;
+
     void Awake()
     {
         playerinput = new InputSystem_Actions();
+
+        playerMovement = GetComponent<PlayerMovement>();
     }
+
     void OnEnable()
     {
         interact = playerinput.player.interact;
@@ -24,16 +30,17 @@ public class PlayerInteractable : MonoBehaviour
     {
         interact.Disable();
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         Physics2D.queriesStartInColliders = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right * transform.localScale.x, distance, boxMask);
+        Vector2 facingDirection = playerMovement.FacingDirection;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, distance, boxMask);
 
         if (box == null && hit.collider != null && hit.collider.gameObject.tag == "pushable" && interact.WasPressedThisFrame())
         {
@@ -41,18 +48,32 @@ public class PlayerInteractable : MonoBehaviour
 
             box.GetComponent<FixedJoint2D>().enabled = true;
             box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
-        } 
+
+            BoxInteract boxScript = box.GetComponent<BoxInteract>();
+            if (boxScript != null)
+            {
+                boxScript.Interaction = InteractionTypes.Hand;
+            }
+        }
         else if (interact.WasPressedThisFrame() && box != null)
         {
             box.GetComponent<FixedJoint2D>().enabled = false;
+
+            BoxInteract boxScript = box.GetComponent<BoxInteract>();
+            if (boxScript != null)
+            {
+                boxScript.Interaction = InteractionTypes.Alone;
+            }
+
             box = null;
         }
     }
 
     void OnDrawGizmos()
     {
+        if (playerMovement == null) return;
         Gizmos.color = Color.yellow;
 
-        Gizmos.DrawLine(transform.position, (Vector2)transform.position + Vector2.right * transform.localScale.x * distance);
+        Gizmos.DrawLine(transform.position, (Vector2)transform.position + playerMovement.FacingDirection * distance);
     }
 }

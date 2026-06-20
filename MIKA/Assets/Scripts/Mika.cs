@@ -12,7 +12,6 @@ public class Mika : MonoBehaviour
     private bool isHanging = false;
     private Vector2 targetHangingPosition;
 
-
    private InputSystem_Actions playerinput;
    private InputAction move;
    private InputAction jump;
@@ -22,6 +21,7 @@ public class Mika : MonoBehaviour
    [SerializeField] private LayerMask ground_layer;
    private Animator animator;
    private SpriteRenderer sprite;
+   public Vector2 currentDir;
 
    // Movement Variables
    private float speed = 15;
@@ -144,6 +144,13 @@ public class Mika : MonoBehaviour
    private void move_action()
    {
        Vector2 moveValue = move.ReadValue<Vector2>();
+       
+       if (moveValue != Vector2.zero)
+        {
+            currentDir = new Vector2(moveValue.x, 0);
+        }
+
+        Debug.Log(currentDir);
 
        if (moveValue.x == 0)
        {
@@ -176,10 +183,10 @@ public class Mika : MonoBehaviour
     void CheckForLedge()
     {
         // 1. Dispara o raio de baixo (no peito/mão)
-        RaycastHit2D hitBaixo = Physics2D.Raycast(ledgeCheck.position, transform.right, checkDistance, ledgeLayer);
+        RaycastHit2D hitBaixo = Physics2D.Raycast(ledgeCheck.position, transform.right * currentDir, checkDistance, ledgeLayer);
 
         // 2. Dispara o raio de cima (acima da cabeça)
-        RaycastHit2D hitCima = Physics2D.Raycast(ledgeTopCheck.position, transform.right, checkDistance, ledgeLayer);
+        RaycastHit2D hitCima = Physics2D.Raycast(ledgeTopCheck.position, transform.right * currentDir, checkDistance, ledgeLayer);
 
         // LÓGICA DA QUINA: O de baixo bate na parede E o de cima NÃO bate em nada
         if (hitBaixo.collider != null && hitCima.collider == null && rb.linearVelocity.y <= 0)
@@ -202,8 +209,7 @@ public class Mika : MonoBehaviour
     void ClimbLedge()
     {
         // Calcula a posi��o final (topo da plataforma) baseado para onde o personagem olha
-        float direction = transform.localScale.x;
-        Vector2 finalPosition = new Vector2(transform.position.x + (climbOffset.x * direction), transform.position.y + climbOffset.y);
+        Vector2 finalPosition = new Vector2(transform.position.x + (climbOffset.x * currentDir.x), transform.position.y + climbOffset.y);
 
         // Teleporta o jogador para cima da plataforma
         transform.position = finalPosition;
@@ -225,9 +231,9 @@ public class Mika : MonoBehaviour
         if (ledgeCheck != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawRay(ledgeCheck.position,  Vector3.right.normalized * checkDistance);
+            Gizmos.DrawRay(ledgeCheck.position, currentDir * checkDistance);
             Gizmos.color = Color.blue;
-            Gizmos.DrawRay(ledgeTopCheck.position, Vector3.right.normalized * checkDistance);
+            Gizmos.DrawRay(ledgeTopCheck.position, currentDir * checkDistance);
         }
     }
 }
