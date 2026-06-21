@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractable
   distance: 1
-  boxMask:
+  interactableMask:
     serializedVersion: 2
     m_Bits: 4294967295
 --- !u!1660057539 &9223372036854775807

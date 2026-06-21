@@ -4,19 +4,18 @@ using UnityEngine.InputSystem;
 public class PlayerInteractable : MonoBehaviour
 {
     public float distance = 1f;
-    public LayerMask boxMask;
+    public LayerMask interactableMask;
 
     private InputSystem_Actions playerinput;
     private InputAction interact;
 
     private PlayerMovement playerMovement;
 
-    private GameObject box;
+    private IInteractable currentInteractable;
 
     void Awake()
     {
         playerinput = new InputSystem_Actions();
-
         playerMovement = GetComponent<PlayerMovement>();
     }
 
@@ -25,14 +24,14 @@ public class PlayerInteractable : MonoBehaviour
         interact = playerinput.player.interact;
         interact.Enable();
 
-        playerMovement.OnJumped += ReleaseBox;
+        playerMovement.OnJumped += EndCurrentInteraction;
     }
 
     void OnDisable()
     {
         interact.Disable();
 
-        playerMovement.OnJumped -= ReleaseBox;
+        playerMovement.OnJumped -= EndCurrentInteraction;
     }
 
     void Start()
@@ -42,42 +41,38 @@ public class PlayerInteractable : MonoBehaviour
 
     void Update()
     {
-        Vector2 facingDirection = playerMovement.FacingDirection;
+        if (!interact.WasPressedThisFrame()) return;
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, distance, boxMask);
-
-        if (box == null && hit.collider != null && hit.collider.gameObject.tag == "pushable" && interact.WasPressedThisFrame())
+        if (currentInteractable == null)
         {
-            box = hit.collider.gameObject;
-
-            box.GetComponent<FixedJoint2D>().enabled = true;
-            box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
-
-            BoxInteract boxScript = box.GetComponent<BoxInteract>();
-            if (boxScript != null)
-            {
-                boxScript.Interaction = InteractionTypes.Hand;
-            }
+            TryStartInteraction();
         }
-        else if (interact.WasPressedThisFrame() && box != null)
+        else
         {
-            ReleaseBox();
+            EndCurrentInteraction();
         }
     }
 
-    private void ReleaseBox()
+    private void TryStartInteraction()
     {
-        if (box == null) return;
+        Vector2 facingDirection = playerMovement.FacingDirection;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, distance, interactableMask);
 
-        box.GetComponent<FixedJoint2D>().enabled = false;
+        if (hit.collider == null) return;
 
-        BoxInteract boxScript = box.GetComponent<BoxInteract>();
-        if (boxScript != null)
-        {
-            boxScript.Interaction = InteractionTypes.Alone;
-        }
+        IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+        if (interactable == null) return;
 
-        box = null;
+        interactable.Interact(gameObject);
+        currentInteractable = interactable;
+    }
+
+    private void EndCurrentInteraction()
+    {
+        if (currentInteractable == null) return;
+
+        currentInteractable.EndInteraction();
+        currentInteractable = null;
     }
 
     void OnDrawGizmos()

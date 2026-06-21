@@ -80,11 +80,6 @@ public class PlayerMovement : MonoBehaviour
     //camada de verificação de parede
     public LayerMask wallLayer;
 
-    [Header("Wall Movement")]
-    //velocidade de deslizamento na parede
-    public float wallSlideSpeed = 2;
-    //bool de verificação se está deslizando na parede
-
     [Header("Ledge Grab")]
     //camada de verificação de quina
     public LayerMask ledgeLayer;
