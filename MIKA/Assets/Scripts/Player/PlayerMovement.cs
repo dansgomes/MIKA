@@ -12,13 +12,14 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     //velocidade base de movimento
     public float moveSpeed = 5f;
-    //entrada horizontal e vertical do jogador
+    public float crouchSpeedDivider = 2f;
+    public float runSpeedMultiplier = 1.6f;
     float horizontalMovement;
     float verticalInput;
 
     [Header("Run")]
     //multiplicador de velocidade ao correr
-    public float runSpeedMultiplier = 1.6f;
+    
     //bool de verificação se está correndo
     bool isRunning;
 
@@ -91,12 +92,8 @@ public class PlayerMovement : MonoBehaviour
     public float ledgeCheckDistance = 0.5f;
     //deslocamento aplicado ao subir a quina
     public Vector2 ledgeClimbOffset = new Vector2(0.3f, 1f);
-    //duração da animação de subida da quina
-    public float ledgeClimbDuration = 0.25f;
     //bool de verificação se está pendurado na quina
     bool isLedgeGrabbed;
-    //bool de verificação se está no meio da subida
-    bool isLedgeClimbing;
     //posição registrada no momento do grab
     Vector2 ledgeGrabPosition;
 
@@ -117,12 +114,6 @@ public class PlayerMovement : MonoBehaviour
             SetCrouching(false);
         }
 
-        //trava a lógica enquanto a animação de subida ocorre
-        if (isLedgeClimbing)
-        {
-            return;
-        }
-
         //processa input enquanto pendurado na quina
         if (isLedgeGrabbed)
         {
@@ -141,7 +132,15 @@ public class PlayerMovement : MonoBehaviour
         Gravity();
 
         //aplica o movimento horizontal com suavização
-        float targetSpeed = moveSpeed * (isRunning ? runSpeedMultiplier : 1f);
+        float targetSpeed = moveSpeed;
+        if (isRunning)
+        {
+            targetSpeed *= runSpeedMultiplier;
+        }
+        else if (isCrouching)
+        {
+            targetSpeed /= crouchSpeedDivider;
+        }
         currentVelocityX = Mathf.SmoothDamp(rb.linearVelocity.x, horizontalMovement * targetSpeed, ref velocityXSmoothing, accelerationTime);
         rb.linearVelocity = new Vector2(currentVelocityX, rb.linearVelocity.y);
 
@@ -157,6 +156,9 @@ public class PlayerMovement : MonoBehaviour
     //retorna true se os dois raycasts detectam uma quina válida
     private bool CheckForLedge()
     {
+        //reforça a regra: nunca agarra quina estando no chão, independente de quem chamar este método
+        if (inGround) return false;
+
         Vector2 facingDirection = new Vector2(isFacingRight ? 1f : -1f, 0f);
 
         //raycast na altura do peito: deve bater na parede
@@ -183,10 +185,10 @@ public class PlayerMovement : MonoBehaviour
         //mantém o player parado enquanto pendurado
         rb.linearVelocity = Vector2.zero;
 
-        //apertou para cima, inicia a subida
+        //apertou para cima, sobe a quina instantaneamente
         if (verticalInput > 0.1f)
         {
-            StartCoroutine(ClimbLedgeRoutine());
+            ClimbLedge();
         }
         //apertou para baixo, solta a quina
         else if (verticalInput < -0.1f)
@@ -202,31 +204,18 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = baseGravity;
     }
 
-    //coroutine que move o player suavemente do grab até o topo da plataforma
-    private System.Collections.IEnumerator ClimbLedgeRoutine()
+    //teleporta o player do ponto de grab até o topo da quina, sem animação de subida
+    private void ClimbLedge()
     {
         isLedgeGrabbed = false;
-        isLedgeClimbing = true;
 
         //calcula o ponto de destino baseado na direção que o player olha
         float facingSign = isFacingRight ? 1f : -1f;
-        Vector2 startPosition = transform.position;
         Vector2 targetPosition = ledgeGrabPosition + new Vector2(ledgeClimbOffset.x * facingSign, ledgeClimbOffset.y);
 
-        //interpola a posição do player ao longo do tempo configurado
-        float elapsed = 0f;
-        while (elapsed < ledgeClimbDuration)
-        {
-            elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed / ledgeClimbDuration);
-            transform.position = Vector2.Lerp(startPosition, targetPosition, t);
-            yield return null;
-        }
-
-        //garante que chegou exatamente no destino e restaura a física
+        //aplica a posição final diretamente e restaura a física
         transform.position = targetPosition;
         rb.gravityScale = baseGravity;
-        isLedgeClimbing = false;
     }
 
     //aumenta a gravidade ao cair e limita a velocidade máxima de queda
@@ -288,9 +277,6 @@ public class PlayerMovement : MonoBehaviour
     //callback de input, processa o pulo simples e o pulo de quina
     public void Jump(InputAction.CallbackContext context)
     {
-        //bloqueia o pulo durante a animação de subida de quina
-        if (isLedgeClimbing) return;
-
         if (context.performed)
         {
             //pulo de quina

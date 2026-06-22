@@ -10,6 +10,9 @@ public class BoxInteract : MonoBehaviour, IInteractable
 {
     private Rigidbody2D rb;
     private FixedJoint2D joint;
+    public bool HoldsPlayer => true;
+
+    private bool isLocked = false;
 
     private InteractionTypes interaction;
     public InteractionTypes Interaction
@@ -47,18 +50,40 @@ public class BoxInteract : MonoBehaviour, IInteractable
         }
     }
 
-    //chamado pelo PlayerInteractable ao apertar o botão de interagir
     public void Interact(GameObject interactor)
     {
+        if (isLocked) return;
+
         joint.enabled = true;
         joint.connectedBody = interactor.GetComponent<Rigidbody2D>();
         Interaction = InteractionTypes.Hand;
     }
 
-    //chamado pelo PlayerInteractable ao soltar (botão de novo ou pulo)
     public void EndInteraction()
     {
+        if (isLocked) return;
+
         joint.enabled = false;
         Interaction = InteractionTypes.Alone;
+    }
+
+    public void Lock()
+    {
+        isLocked = true;
+
+        if (joint != null)
+        {
+            joint.enabled = false;
+        }
+
+        rb.bodyType = RigidbodyType2D.Static;
+
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
+
+        enabled = false;
     }
 }

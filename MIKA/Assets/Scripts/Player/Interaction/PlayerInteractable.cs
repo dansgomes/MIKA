@@ -64,7 +64,11 @@ public class PlayerInteractable : MonoBehaviour
         if (interactable == null) return;
 
         interactable.Interact(gameObject);
-        currentInteractable = interactable;
+
+        if (interactable.HoldsPlayer)
+        {
+            currentInteractable = interactable;
+        }
     }
 
     private void EndCurrentInteraction()
