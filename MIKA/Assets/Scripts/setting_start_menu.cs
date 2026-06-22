@@ -15,6 +15,14 @@ public class se : MonoBehaviour
    [SerializeField] private Button add_sond_effect_button;
    [SerializeField] private Button subtract_music_button;
    [SerializeField] private Button add_music_button;
+   [SerializeField] private Button help_keyboard_button;
+   [SerializeField] private Button help_gamepad_button;
+   [SerializeField] private Button no_help_keyboard_button;
+   [SerializeField] private Button no_help_gamepad_button;
+
+   [SerializeField] private GameObject keyboard_view;
+   [SerializeField] private GameObject gamepad_view;
+
 
    void Update()
    {
@@ -36,6 +44,13 @@ public class se : MonoBehaviour
 
 		//BOTÃO VOLTAR
 		return_button.onClick.AddListener(return_game);
+
+
+		//BOTÕES DE AJUDA
+		help_keyboard_button.onClick.AddListener(help_keyboard_game);
+		help_gamepad_button.onClick.AddListener(help_gamepad_game);
+		no_help_keyboard_button.onClick.AddListener(no_help_keyboard_game);
+		no_help_gamepad_button.onClick.AddListener(no_help_gamepad_game);
 	}
 
 	//EXECUÇÃO DOS BOTÕES DO SISTEMA DE VOLUME
@@ -89,4 +104,28 @@ public class se : MonoBehaviour
         SceneManager.LoadScene("menu_principal");
 		sond_manager.instance.play_sond_effects("pac");
     }
+
+	//EXECUÇÃO DOS BOTÕES DE AJUDA
+	public void help_keyboard_game()
+	{
+		keyboard_view.SetActive(true);
+		sond_manager.instance.play_sond_effects("pac");
+	}
+
+	public void help_gamepad_game()
+	{
+		gamepad_view.SetActive(true);
+		sond_manager.instance.play_sond_effects("pac");
+	}
+	public void no_help_keyboard_game()
+	{
+		keyboard_view.SetActive(false);
+		sond_manager.instance.play_sond_effects("pac");
+	}
+
+	public void no_help_gamepad_game()
+	{
+		gamepad_view.SetActive(false);
+		sond_manager.instance.play_sond_effects("pac");
+	}
 }
