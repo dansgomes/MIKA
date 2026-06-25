@@ -11,13 +11,19 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
+        if(master_setting.Instance.save_communicate==0)
+        {
+            continue_button.interactable = false;       
+        }
+        
+
         start_button.onClick.AddListener(start_game);
         continue_button.onClick.AddListener(continue_game);
         settings_button.onClick.AddListener(settings_game);
         credits_button.onClick.AddListener(credits_game);
         exit_button.onClick.AddListener(exit_game);
 
-        sond_manager.instance.play_sond_background("fundo");
+       // sond_manager.instance.play_sond_background("fundo");
     }
     //BOTÃO JOGAR
     public void start_game()
@@ -30,7 +36,32 @@ public class Menu : MonoBehaviour
     //BOTÃO CONTINUAR
     public void continue_game()
     {
-        sond_manager.instance.play_sond_effects("pac");
+        if(master_setting.Instance.save_communicate==1)
+        {
+            sond_manager.instance.play_sond_effects("pac");
+            SceneManager.LoadScene("Fase 2");
+        }
+        else if (master_setting.Instance.save_communicate==2)
+        {
+            sond_manager.instance.play_sond_effects("pac");
+            SceneManager.LoadScene("Fase 3");
+        }
+        else if (master_setting.Instance.save_communicate==3)
+        {
+            sond_manager.instance.play_sond_effects("pac");
+            SceneManager.LoadScene("Fase 4");
+        }
+        else if (master_setting.Instance.save_communicate==4)
+        {
+            sond_manager.instance.play_sond_effects("pac");
+            SceneManager.LoadScene("Fase 5");
+        }
+        else if (master_setting.Instance.save_communicate==5)
+        {
+            sond_manager.instance.play_sond_effects("pac");
+            SceneManager.LoadScene("Fase 6");
+        }
+        
     }
 
     //BOTÃO CONFIGURAÇÕES

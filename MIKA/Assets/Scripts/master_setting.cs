@@ -6,7 +6,23 @@ public class master_setting : MonoBehaviour
     public int sond_effect = 10;
 	public int music = 10;
 
+    [SerializeField] private int save_setting = 0;
+    public int save_communicate
+    {
+        get
+        {
+            return save_setting;
+        }
+        set
+        {
+            save_setting = value;
+        }
+    }
 
+
+
+
+    
 
     //SISTEMA HIGHLANDER
     public static master_setting Instance;
@@ -22,6 +38,9 @@ public class master_setting : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
+   
+
 
     public void SetEffectVolume(int value)
     {

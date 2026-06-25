@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::master_setting
   sond_effect: 10
   music: 10
+  save_setting: 0
 --- !u!1 &69975585
 GameObject:
   m_ObjectHideFlags: 0
