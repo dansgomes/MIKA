@@ -1,0 +1,1497 @@
+fileFormatVersion: 2
+guid: 623f93bef47b6624baace6c1c1bf935d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1519488048158729186
+    second: 01_mika_idle_300x300_4segundos_0
+  - first:
+      213: 790635709173392058
+    second: 01_mika_idle_300x300_4segundos_1
+  - first:
+      213: -6196050592609778322
+    second: 01_mika_idle_300x300_4segundos_2
+  - first:
+      213: 3159918632409220987
+    second: 01_mika_idle_300x300_4segundos_3
+  - first:
+      213: 7855349448566257638
+    second: 01_mika_idle_300x300_4segundos_4
+  - first:
+      213: -4780151950328051066
+    second: 01_mika_idle_300x300_4segundos_5
+  - first:
+      213: -3726392020853121607
+    second: 01_mika_idle_300x300_4segundos_6
+  - first:
+      213: 630860863488286246
+    second: 01_mika_idle_300x300_4segundos_7
+  - first:
+      213: -6538702928173078230
+    second: 01_mika_idle_300x300_4segundos_8
+  - first:
+      213: 8830334881745173103
+    second: 01_mika_idle_300x300_4segundos_9
+  - first:
+      213: 8870731620693105615
+    second: 01_mika_idle_300x300_4segundos_10
+  - first:
+      213: 6061823216548137152
+    second: 01_mika_idle_300x300_4segundos_11
+  - first:
+      213: -4772972384290394162
+    second: 01_mika_idle_300x300_4segundos_12
+  - first:
+      213: -5133755001197093164
+    second: 01_mika_idle_300x300_4segundos_13
+  - first:
+      213: -2405189184097526020
+    second: 01_mika_idle_300x300_4segundos_14
+  - first:
+      213: -4511386493297779253
+    second: 01_mika_idle_300x300_4segundos_15
+  - first:
+      213: -7402864679709425151
+    second: 01_mika_idle_300x300_4segundos_16
+  - first:
+      213: 308837312284347348
+    second: 01_mika_idle_300x300_4segundos_17
+  - first:
+      213: -5923125629977444738
+    second: 01_mika_idle_300x300_4segundos_18
+  - first:
+      213: -211276326525851671
+    second: 01_mika_idle_300x300_4segundos_19
+  - first:
+      213: -6963637105814126360
+    second: 01_mika_idle_300x300_4segundos_20
+  - first:
+      213: 7276519712426427958
+    second: 01_mika_idle_300x300_4segundos_21
+  - first:
+      213: 4713508885807236871
+    second: 01_mika_idle_300x300_4segundos_22
+  - first:
+      213: -619465278285296501
+    second: 01_mika_idle_300x300_4segundos_23
+  - first:
+      213: 2920421230965806235
+    second: 01_mika_idle_300x300_4segundos_24
+  - first:
+      213: 6970456493068204756
+    second: 01_mika_idle_300x300_4segundos_25
+  - first:
+      213: -8057918736893020253
+    second: 01_mika_idle_300x300_4segundos_26
+  - first:
+      213: 3523004828748382059
+    second: 01_mika_idle_300x300_4segundos_27
+  - first:
+      213: 2931692611839688176
+    second: 01_mika_idle_300x300_4segundos_28
+  - first:
+      213: -5829734628290572198
+    second: 01_mika_idle_300x300_4segundos_29
+  - first:
+      213: 8247548561494166604
+    second: 01_mika_idle_300x300_4segundos_30
+  - first:
+      213: 1143385936102124623
+    second: 01_mika_idle_300x300_4segundos_31
+  - first:
+      213: -5444500667800626925
+    second: 01_mika_idle_300x300_4segundos_32
+  - first:
+      213: 2556399550469707840
+    second: 01_mika_idle_300x300_4segundos_33
+  - first:
+      213: -3988877813345276320
+    second: 01_mika_idle_300x300_4segundos_34
+  - first:
+      213: -9020359625053327893
+    second: 01_mika_idle_300x300_4segundos_35
+  - first:
+      213: 6279620559951932786
+    second: 01_mika_idle_300x300_4segundos_36
+  - first:
+      213: -1740657078938397757
+    second: 01_mika_idle_300x300_4segundos_37
+  - first:
+      213: -6588510689570266018
+    second: 01_mika_idle_300x300_4segundos_38
+  - first:
+      213: -4386868161496681225
+    second: 01_mika_idle_300x300_4segundos_39
+  - first:
+      213: 1442518304704076992
+    second: 01_mika_idle_300x300_4segundos_40
+  - first:
+      213: -3067470704512746654
+    second: 01_mika_idle_300x300_4segundos_41
+  - first:
+      213: -140218380087833515
+    second: 01_mika_idle_300x300_4segundos_42
+  - first:
+      213: 7428349152649896482
+    second: 01_mika_idle_300x300_4segundos_43
+  - first:
+      213: -180683346603117737
+    second: 01_mika_idle_300x300_4segundos_44
+  - first:
+      213: -2106176838349731711
+    second: 01_mika_idle_300x300_4segundos_45
+  - first:
+      213: 2461449671402671322
+    second: 01_mika_idle_300x300_4segundos_46
+  - first:
+      213: 4450176415007255006
+    second: 01_mika_idle_300x300_4segundos_47
+  - first:
+      213: -2918223729460537035
+    second: 01_mika_idle_300x300_4segundos_48
+  - first:
+      213: 6234736981171708792
+    second: 01_mika_idle_300x300_4segundos_49
+  - first:
+      213: -7655266285166620479
+    second: 01_mika_idle_300x300_4segundos_50
+  - first:
+      213: -6509321897202658893
+    second: 01_mika_idle_300x300_4segundos_51
+  - first:
+      213: -9043062712733919299
+    second: 01_mika_idle_300x300_4segundos_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 170
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c1c09bba1b9eae0800000000000000
+      internalID: -1519488048158729186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2e4001df6e8fa00800000000000000
+      internalID: 790635709173392058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65452960d4330aa0800000000000000
+      internalID: -6196050592609778322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77c3e311494adb20800000000000000
+      internalID: 3159918632409220987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e73a5c34bec30d60800000000000000
+      internalID: 7855349448566257638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a4e44a02d79adb0800000000000000
+      internalID: -4780151950328051066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd13374332394cc0800000000000000
+      internalID: -3726392020853121607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e5ae6ec9441c800800000000000000
+      internalID: 630860863488286246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29ef62945cd145a0800000000000000
+      internalID: -6538702928173078230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a79223ac6ab8a70800000000000000
+      internalID: 8830334881745173103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbdc3de86b2b1b70800000000000000
+      internalID: 8870731620693105615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c84199391cef1450800000000000000
+      internalID: 6061823216548137152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf2f9f97eef2cdb0800000000000000
+      internalID: -4772972384290394162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de13c5b60d31c8b0800000000000000
+      internalID: -5133755001197093164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe51482e2d0f9ed0800000000000000
+      internalID: -2405189184097526020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_15
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd9d7ef2e55461c0800000000000000
+      internalID: -4511386493297779253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10242adbbcdb34990800000000000000
+      internalID: -7402864679709425151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db481436e5394400800000000000000
+      internalID: 308837312284347348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ebe212f94dccda0800000000000000
+      internalID: -5923125629977444738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e72af7ec45611df0800000000000000
+      internalID: -211276326525851671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0483b72f03c5f90800000000000000
+      internalID: -6963637105814126360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_21
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6360e4430246bf460800000000000000
+      internalID: 7276519712426427958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7070030cb5fb96140800000000000000
+      internalID: 4713508885807236871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ccd198c973767f0800000000000000
+      internalID: -619465278285296501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94d932f2ab678820800000000000000
+      internalID: 2920421230965806235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da35a7df390cb060800000000000000
+      internalID: 6970456493068204756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7f68af9958c2090800000000000000
+      internalID: -8057918736893020253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_27
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f788fd93a34e030800000000000000
+      internalID: 3523004828748382059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd775fc5e67fa820800000000000000
+      internalID: 2931692611839688176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_29
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5052f92e3f981fa0800000000000000
+      internalID: -5829734628290572198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cc4a328bd257270800000000000000
+      internalID: 8247548561494166604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_31
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c6b82737f1edf00800000000000000
+      internalID: 1143385936102124623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_32
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319dd542d7f3174b0800000000000000
+      internalID: -5444500667800626925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_33
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04817b5c8d72a7320800000000000000
+      internalID: 2556399550469707840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_34
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e2e1343c8a4a8c0800000000000000
+      internalID: -3988877813345276320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_35
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedab6286be31d280800000000000000
+      internalID: -9020359625053327893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dac20e0a1b52750800000000000000
+      internalID: 6279620559951932786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c39b1eeb91f7d7e0800000000000000
+      internalID: -1740657078938397757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54ec4d6f68e094a0800000000000000
+      internalID: -6588510689570266018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4f48556a6be13c0800000000000000
+      internalID: -4386868161496681225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_40
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc92ed51cad40410800000000000000
+      internalID: 1442518304704076992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_41
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bb99a75a72e65d0800000000000000
+      internalID: -3067470704512746654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c42ef4028dd0ef0800000000000000
+      internalID: -140218380087833515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222654f723cc61760800000000000000
+      internalID: 7428349152649896482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75374ec14751e7df0800000000000000
+      internalID: -180683346603117737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_45
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1884204135b55c2e0800000000000000
+      internalID: -2106176838349731711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_46
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc45705f63d82220800000000000000
+      internalID: 2461449671402671322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_47
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed924541fd332cd30800000000000000
+      internalID: 4450176415007255006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539936ebaf26087d0800000000000000
+      internalID: -2918223729460537035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_49
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8732bb6504c368650800000000000000
+      internalID: 6234736981171708792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_50
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c09e9b7fd703c590800000000000000
+      internalID: -7655266285166620479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_51
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b1509ce83e3aa5a0800000000000000
+      internalID: -6509321897202658893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01_mika_idle_300x300_4segundos_52
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db71aedff56908280800000000000000
+      internalID: -9043062712733919299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3caf85efe7d52724d81ca232e4699064
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":300.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      01_mika_idle_300x300_4segundos_0: -1519488048158729186
+      01_mika_idle_300x300_4segundos_1: 790635709173392058
+      01_mika_idle_300x300_4segundos_10: 8870731620693105615
+      01_mika_idle_300x300_4segundos_11: 6061823216548137152
+      01_mika_idle_300x300_4segundos_12: -4772972384290394162
+      01_mika_idle_300x300_4segundos_13: -5133755001197093164
+      01_mika_idle_300x300_4segundos_14: -2405189184097526020
+      01_mika_idle_300x300_4segundos_15: -4511386493297779253
+      01_mika_idle_300x300_4segundos_16: -7402864679709425151
+      01_mika_idle_300x300_4segundos_17: 308837312284347348
+      01_mika_idle_300x300_4segundos_18: -5923125629977444738
+      01_mika_idle_300x300_4segundos_19: -211276326525851671
+      01_mika_idle_300x300_4segundos_2: -6196050592609778322
+      01_mika_idle_300x300_4segundos_20: -6963637105814126360
+      01_mika_idle_300x300_4segundos_21: 7276519712426427958
+      01_mika_idle_300x300_4segundos_22: 4713508885807236871
+      01_mika_idle_300x300_4segundos_23: -619465278285296501
+      01_mika_idle_300x300_4segundos_24: 2920421230965806235
+      01_mika_idle_300x300_4segundos_25: 6970456493068204756
+      01_mika_idle_300x300_4segundos_26: -8057918736893020253
+      01_mika_idle_300x300_4segundos_27: 3523004828748382059
+      01_mika_idle_300x300_4segundos_28: 2931692611839688176
+      01_mika_idle_300x300_4segundos_29: -5829734628290572198
+      01_mika_idle_300x300_4segundos_3: 3159918632409220987
+      01_mika_idle_300x300_4segundos_30: 8247548561494166604
+      01_mika_idle_300x300_4segundos_31: 1143385936102124623
+      01_mika_idle_300x300_4segundos_32: -5444500667800626925
+      01_mika_idle_300x300_4segundos_33: 2556399550469707840
+      01_mika_idle_300x300_4segundos_34: -3988877813345276320
+      01_mika_idle_300x300_4segundos_35: -9020359625053327893
+      01_mika_idle_300x300_4segundos_36: 6279620559951932786
+      01_mika_idle_300x300_4segundos_37: -1740657078938397757
+      01_mika_idle_300x300_4segundos_38: -6588510689570266018
+      01_mika_idle_300x300_4segundos_39: -4386868161496681225
+      01_mika_idle_300x300_4segundos_4: 7855349448566257638
+      01_mika_idle_300x300_4segundos_40: 1442518304704076992
+      01_mika_idle_300x300_4segundos_41: -3067470704512746654
+      01_mika_idle_300x300_4segundos_42: -140218380087833515
+      01_mika_idle_300x300_4segundos_43: 7428349152649896482
+      01_mika_idle_300x300_4segundos_44: -180683346603117737
+      01_mika_idle_300x300_4segundos_45: -2106176838349731711
+      01_mika_idle_300x300_4segundos_46: 2461449671402671322
+      01_mika_idle_300x300_4segundos_47: 4450176415007255006
+      01_mika_idle_300x300_4segundos_48: -2918223729460537035
+      01_mika_idle_300x300_4segundos_49: 6234736981171708792
+      01_mika_idle_300x300_4segundos_5: -4780151950328051066
+      01_mika_idle_300x300_4segundos_50: -7655266285166620479
+      01_mika_idle_300x300_4segundos_51: -6509321897202658893
+      01_mika_idle_300x300_4segundos_52: -9043062712733919299
+      01_mika_idle_300x300_4segundos_6: -3726392020853121607
+      01_mika_idle_300x300_4segundos_7: 630860863488286246
+      01_mika_idle_300x300_4segundos_8: -6538702928173078230
+      01_mika_idle_300x300_4segundos_9: 8830334881745173103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
