@@ -18,8 +18,6 @@ public class PlayerMovement : MonoBehaviour
     float verticalInput;
 
     [Header("Run")]
-    //multiplicador de velocidade ao correr
-    
     //bool de verificação se está correndo
     bool isRunning;
 
@@ -58,11 +56,15 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheckPos;
     //tamanho da caixa de verificação de chão
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
-    //camada de verificação de chão
+    //camada de verificação de chão sólido comum
     public LayerMask groundLayer;
-    //bool de verificação se está no chão
+    //camada de plataformas e ledges — permite pousar e pular sem interferir no grab
+    public LayerMask platformLayer;
+    //bool de verificação se está no chão sólido
     public bool inGround;
-    //bool de verificação se pode pular
+    //bool de verificação se está em cima de uma plataforma ou ledge
+    public bool onPlatform;
+    //bool de verificação se pode fazer wall jump
     public bool canJump;
 
     [Header("Gravity")]
@@ -82,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask wallLayer;
 
     [Header("Ledge Grab")]
-    //camada de verificação de quina
+    //camada de verificação de quina — nunca inclua aqui layers que estão no groundLayer
     public LayerMask ledgeLayer;
     //pivot de detecção de parede da quina
     public Transform ledgeWallCheckPos;
@@ -122,6 +124,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //verifica e executa o grab de quina se estiver caindo e detectar uma
+        //o CheckForLedge já resolve internamente o caso de estar em cima da ledge via topHit
         if (!inGround && rb.linearVelocity.y <= 0f && CheckForLedge())
         {
             GrabLedge();
@@ -154,9 +157,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //retorna true se os dois raycasts detectam uma quina válida
+    //quando o player está em cima da ledge, o topHit bate nela e retorna false naturalmente
+    //quando está na lateral caindo, o topHit não bate em nada e o grab acontece
     private bool CheckForLedge()
     {
-        //reforça a regra: nunca agarra quina estando no chão, independente de quem chamar este método
+        //nunca agarra quina estando no chão sólido
         if (inGround) return false;
 
         Vector2 facingDirection = new Vector2(isFacingRight ? 1f : -1f, 0f);
@@ -289,8 +294,8 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            //pulo normal
-            if (canJumpNow && (inGround || canJump))
+            //pulo normal — onPlatform permite pular em cima de ledges e plataformas
+            if (canJumpNow && (inGround || onPlatform || canJump))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
                 canJumpNow = false;
@@ -306,15 +311,21 @@ public class PlayerMovement : MonoBehaviour
 
     //O Jogo (só pra saber se tu tá esperto msm kkkkk)
 
-    //verifica se está no chão ou na parede e gerencia a liberação do pulo
+    //verifica se está no chão, plataforma ou parede e gerencia a liberação do pulo
     private void GroundCheck()
     {
+        //chão sólido comum — nunca inclui ledge, para não bloquear o grab
         inGround = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);
+
+        //plataformas e ledges — permite pousar e pular sem poluir o inGround
+        onPlatform = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, platformLayer);
+
+        //parede abaixo — permite wall jump
         canJump = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, wallLayer);
 
-        //só restaura o pulo disponível se estiver no chão/parede E não estiver subindo
+        //só restaura o pulo disponível se estiver apoiado em algo E não estiver subindo
         //(evita re-liberar o pulo no mesmo frame em que ele decolou, antes de saída da caixa de detecção)
-        if ((inGround || canJump) && rb.linearVelocity.y <= 0.01f)
+        if ((inGround || onPlatform || canJump) && rb.linearVelocity.y <= 0.01f)
         {
             canJumpNow = true;
         }
@@ -342,7 +353,7 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(wallCheckPos.position, wallCheckSize);
 
-        //raio de detecção de quina
+        //raio de detecção de quina — parede
         if (ledgeWallCheckPos != null)
         {
             Gizmos.color = Color.green;
@@ -350,7 +361,7 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.DrawLine(ledgeWallCheckPos.position, (Vector2)ledgeWallCheckPos.position + dir);
         }
 
-        //raio de detecção de quina
+        //raio de detecção de quina — topo
         if (ledgeTopCheckPos != null)
         {
             Gizmos.color = Color.yellow;
