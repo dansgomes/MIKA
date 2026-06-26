@@ -187,6 +187,7 @@ MonoBehaviour:
   isWalking: 0
   isJumping: 0
   isKnockedBack: 0
+  flipLocked: 0
   spriteRenderer: {fileID: 2216799668550748196}
   crouchOpacity: 1
   isCrouching: 0
@@ -220,8 +221,10 @@ MonoBehaviour:
   ledgeWallCheckPos: {fileID: 3799731990693430013}
   ledgeTopCheckPos: {fileID: 1014764294461615658}
   ledgeCheckDistance: 0.2
-  ledgeClimbOffset: {x: 0.3, y: 1}
+  ledgeClimbOffset: {x: 0.6, y: 1}
   isLedgeGrabbed: 0
+  isClimbingLedge: 0
+  climbDuration: 0.1
 --- !u!114 &5605290194016368334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,16 +238,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDamage
   rb: {fileID: 8444145780089657215}
-  spriteRenderer: {fileID: 2216799668550748196}
   playerMovement: {fileID: 9067641922787853375}
   knockbackDuration: 0.2
-  flashCount: 3
-  flashInterval: 0.08
   damageLayer:
     serializedVersion: 2
     m_Bits: 1024
-  knockbackForce: 5
-  knockbackVertical: 2
+  knockbackForce: 2
+  knockbackVertical: 0
 --- !u!50 &8444145780089657215
 Rigidbody2D:
   serializedVersion: 5
@@ -496,6 +496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
   animator: {fileID: 94623556283433975}
   movement: {fileID: 9067641922787853375}
+  damage: {fileID: 0}
+  interactable: {fileID: 0}
   animMoveX: 0
 --- !u!1 &5297647042609598433
 GameObject:
