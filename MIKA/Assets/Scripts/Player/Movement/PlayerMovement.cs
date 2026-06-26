@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("External Control")]
     public bool isKnockedBack;
+    public bool flipLocked;
 
     [Header("Crouch")]
     public SpriteRenderer spriteRenderer;
@@ -45,6 +47,22 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 FacingDirection => new Vector2(isFacingRight ? 1f : -1f, 0f);
 
+    private float lastInteractionDirection = 1f;
+    public float InteractionDirection
+    {
+        get
+        {
+            if (Mathf.Abs(horizontalMovement) > 0.01f)
+            {
+                float facingSign = isFacingRight ? 1f : -1f;
+                float inputSign = Mathf.Sign(horizontalMovement);
+                lastInteractionDirection = facingSign * inputSign;
+            }
+
+            return lastInteractionDirection;
+        }
+    }
+
     [Header("Ground Check")]
     public Transform groundCheckPos;
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
@@ -55,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
     public bool canJump;
 
     [Header("Gravity")]
-    //gravidade base
     public float baseGravity = 2;
     public float maxFallSpeed = 18f;
     public float fallSpeedMultiplier = 2f;
@@ -72,6 +89,8 @@ public class PlayerMovement : MonoBehaviour
     public float ledgeCheckDistance = 0.5f;
     public Vector2 ledgeClimbOffset = new Vector2(0.3f, 1f);
     public bool isLedgeGrabbed;
+    public bool isClimbingLedge;
+    public float climbDuration = 0.3f;
     Vector2 ledgeGrabPosition;
 
     private void Awake()
@@ -188,6 +207,15 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = targetPosition;
         rb.gravityScale = baseGravity;
+
+        StartCoroutine(ClimbLedgeRoutine());
+    }
+
+    private IEnumerator ClimbLedgeRoutine()
+    {
+        isClimbingLedge = true;
+        yield return new WaitForSeconds(climbDuration);
+        isClimbingLedge = false;
     }
 
     private void Gravity()
@@ -283,7 +311,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //O Jogo (só pra saber se tu tá esperto msm kkkkk)
-
     private void GroundCheck()
     {
         inGround = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);
@@ -300,6 +327,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Flip()
     {
+        if (flipLocked) return;
+
         if ((isFacingRight && horizontalMovement < 0) || (!isFacingRight && horizontalMovement > 0))
         {
             isFacingRight = !isFacingRight;

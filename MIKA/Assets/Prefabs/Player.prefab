@@ -160,7 +160,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.7647059, y: 1.7647059}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -188,7 +188,7 @@ MonoBehaviour:
   isJumping: 0
   isKnockedBack: 0
   spriteRenderer: {fileID: 2216799668550748196}
-  crouchOpacity: 0.5
+  crouchOpacity: 1
   isCrouching: 0
   capsuleCollider: {fileID: 1728700947074282861}
   crouchColliderHeight: 0.5
@@ -311,7 +311,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.7647059, y: 1.7647059}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 1.7647059, y: 1.7647059}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

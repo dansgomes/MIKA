@@ -13,6 +13,8 @@ public class PlayerInteractable : MonoBehaviour
 
     private IInteractable currentInteractable;
 
+    public bool IsInteracting => currentInteractable != null;
+
     void Awake()
     {
         playerinput = new InputSystem_Actions();
@@ -68,6 +70,7 @@ public class PlayerInteractable : MonoBehaviour
         if (interactable.HoldsPlayer)
         {
             currentInteractable = interactable;
+            playerMovement.flipLocked = true;
         }
     }
 
@@ -77,6 +80,7 @@ public class PlayerInteractable : MonoBehaviour
 
         currentInteractable.EndInteraction();
         currentInteractable = null;
+        playerMovement.flipLocked = false;
     }
 
     void OnDrawGizmos()

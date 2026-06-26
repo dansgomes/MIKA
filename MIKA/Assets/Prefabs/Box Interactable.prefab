@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3333937102468951038}
   - component: {fileID: 4976853574647931642}
   - component: {fileID: 2520358095477318703}
-  - component: {fileID: 6108557099733671425}
+  - component: {fileID: 7150444293072668493}
   m_Layer: 11
   m_Name: box
   m_TagString: pushable
@@ -254,8 +254,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197dad7bb096eba4fa4c66b4392242d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxInteract
---- !u!255 &6108557099733671425
-FixedJoint2D:
+  maxForce: 1000
+  maxTorque: 0
+--- !u!254 &7150444293072668493
+RelativeJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -268,11 +270,12 @@ FixedJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_DampingRatio: 0
-  m_Frequency: 0
+  m_MaxForce: 10000
+  m_MaxTorque: 10000
+  m_CorrectionScale: 0.3
+  m_AutoConfigureOffset: 1
+  m_LinearOffset: {x: 0, y: 0}
+  m_AngularOffset: 0
 --- !u!1 &7949403183173521227
 GameObject:
   m_ObjectHideFlags: 0

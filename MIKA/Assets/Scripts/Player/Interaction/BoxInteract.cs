@@ -6,11 +6,17 @@ public enum InteractionTypes
     Hand
 }
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(RelativeJoint2D))]
 public class BoxInteract : MonoBehaviour, IInteractable
 {
     private Rigidbody2D rb;
-    private FixedJoint2D joint;
+    private RelativeJoint2D joint;
     public bool HoldsPlayer => true;
+
+    [Header("Relative Joint Settings")]
+    public float maxForce = 1000f;
+    public float maxTorque = 0f;
 
     private bool isLocked = false;
 
@@ -30,7 +36,10 @@ public class BoxInteract : MonoBehaviour, IInteractable
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        joint = GetComponent<FixedJoint2D>();
+        joint = GetComponent<RelativeJoint2D>();
+        joint.enabled = false;
+        joint.maxForce = maxForce;
+        joint.maxTorque = maxTorque;
         Interactions();
     }
 
@@ -41,11 +50,13 @@ public class BoxInteract : MonoBehaviour, IInteractable
             case InteractionTypes.Alone:
                 rb.bodyType = RigidbodyType2D.Dynamic;
                 rb.mass = 15;
+                rb.constraints = RigidbodyConstraints2D.None;
                 break;
 
             case InteractionTypes.Hand:
                 rb.bodyType = RigidbodyType2D.Dynamic;
                 rb.mass = 1;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
                 break;
         }
     }
@@ -54,8 +65,16 @@ public class BoxInteract : MonoBehaviour, IInteractable
     {
         if (isLocked) return;
 
+        Rigidbody2D playerRb = interactor.GetComponent<Rigidbody2D>();
+        if (playerRb == null) return;
+
+        Vector2 currentOffset = rb.position - playerRb.position;
+
+        joint.connectedBody = playerRb;
+        joint.linearOffset = currentOffset;
+        joint.angularOffset = 0f;
         joint.enabled = true;
-        joint.connectedBody = interactor.GetComponent<Rigidbody2D>();
+
         Interaction = InteractionTypes.Hand;
     }
 

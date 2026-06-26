@@ -139,10 +139,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 900
-        width: 300
-        height: 300
+        x: 78
+        y: 917
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +161,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_1
       rect:
         serializedVersion: 2
-        x: 300
-        y: 900
-        width: 300
-        height: 300
+        x: 365
+        y: 914
+        width: 158
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_2
       rect:
         serializedVersion: 2
-        x: 600
-        y: 900
-        width: 300
-        height: 300
+        x: 648
+        y: 914
+        width: 179
+        height: 261
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_3
       rect:
         serializedVersion: 2
-        x: 900
-        y: 900
-        width: 300
-        height: 300
+        x: 948
+        y: 915
+        width: 161
+        height: 262
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 600
-        width: 300
-        height: 300
+        x: 47
+        y: 615
+        width: 143
+        height: 268
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_5
       rect:
         serializedVersion: 2
-        x: 300
-        y: 600
-        width: 300
-        height: 300
+        x: 332
+        y: 615
+        width: 143
+        height: 271
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_6
       rect:
         serializedVersion: 2
-        x: 600
-        y: 600
-        width: 300
-        height: 300
+        x: 618
+        y: 618
+        width: 143
+        height: 265
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +293,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_7
       rect:
         serializedVersion: 2
-        x: 900
-        y: 600
-        width: 300
-        height: 300
+        x: 918
+        y: 618
+        width: 140
+        height: 263
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 300
-        width: 300
-        height: 300
+        x: 19
+        y: 317
+        width: 140
+        height: 265
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +337,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_9
       rect:
         serializedVersion: 2
-        x: 300
-        y: 300
-        width: 300
-        height: 300
+        x: 319
+        y: 317
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +359,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_10
       rect:
         serializedVersion: 2
-        x: 600
-        y: 300
-        width: 300
-        height: 300
+        x: 619
+        y: 317
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +381,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_11
       rect:
         serializedVersion: 2
-        x: 900
-        y: 300
-        width: 300
-        height: 300
+        x: 919
+        y: 317
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,10 +403,10 @@ TextureImporter:
       name: 13_mika_dano_300x300_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 300
-        height: 300
+        x: 19
+        y: 17
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,7 +435,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":300.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       13_mika_dano_300x300_0: 4225144311783080921
       13_mika_dano_300x300_1: -8745065142106448612
