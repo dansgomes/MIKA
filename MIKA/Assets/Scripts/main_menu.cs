@@ -28,9 +28,21 @@ public class Menu : MonoBehaviour
     //BOTÃO JOGAR
     public void start_game()
     {
-        SceneManager.LoadScene("cutscene_00");
-        sond_manager.instance.StopMusic();
-        sond_manager.instance.play_sond_effects("pac");
+        if(master_setting.Instance.save_communicate==0)
+        {
+            SceneManager.LoadScene("cutscene_00");
+            sond_manager.instance.StopMusic();
+            sond_manager.instance.play_sond_effects("pac");
+        }
+        else
+        {
+            master_setting.Instance.save_communicate=0;
+            master_setting.Instance.SaveGame();
+            SceneManager.LoadScene("cutscene_00");
+            sond_manager.instance.StopMusic();
+            sond_manager.instance.play_sond_effects("pac");
+        }
+        
     }
     
     //BOTÃO CONTINUAR
