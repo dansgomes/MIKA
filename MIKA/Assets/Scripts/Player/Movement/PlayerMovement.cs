@@ -17,10 +17,12 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Run")]
     public bool isRunning;
+    private bool runInputHeld;
 
     [Header("State")]
     public bool isWalking;
     public bool isJumping;
+    public bool isFalling;
 
     [Header("External Control")]
     public bool isKnockedBack;
@@ -73,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canJump;
 
     [Header("Gravity")]
+    //gravidade base
     public float baseGravity = 2;
     public float maxFallSpeed = 18f;
     public float fallSpeedMultiplier = 2f;
@@ -108,10 +111,14 @@ public class PlayerMovement : MonoBehaviour
 
         isWalking = Mathf.Abs(horizontalMovement) > 0.01f && (inGround || onPlatform);
 
+        isRunning = runInputHeld && isWalking;
+
         if (isJumping && (inGround || onPlatform) && rb.linearVelocity.y <= 0.01f)
         {
             isJumping = false;
         }
+
+        isFalling = !isJumping && !inGround && !onPlatform && !isLedgeGrabbed && rb.linearVelocity.y < -0.01f;
 
         if (isKnockedBack)
         {
@@ -241,9 +248,9 @@ public class PlayerMovement : MonoBehaviour
     public void Run(InputAction.CallbackContext context)
     {
         if (context.performed)
-            isRunning = true;
+            runInputHeld = true;
         else if (context.canceled)
-            isRunning = false;
+            runInputHeld = false;
     }
 
     public void Crouch(InputAction.CallbackContext context)
@@ -286,15 +293,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.performed)
         {
-            if (isLedgeGrabbed)
-            {
-                isLedgeGrabbed = false;
-                rb.gravityScale = baseGravity;
-                rb.linearVelocity = new Vector2(-(isFacingRight ? 1f : -1f) * jumpPower, jumpPower);
-                isJumping = true;
-                OnJumped?.Invoke();
-                return;
-            }
+            if (isLedgeGrabbed) return;
 
             if (canJumpNow && (inGround || onPlatform || canJump))
             {
@@ -311,6 +310,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //O Jogo (só pra saber se tu tá esperto msm kkkkk)
+
     private void GroundCheck()
     {
         inGround = Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);

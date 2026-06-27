@@ -22,6 +22,7 @@ public class PlayerAnimator : MonoBehaviour
         animator.SetBool("IsWalking", movement.isWalking);
         animator.SetBool("IsRunning", movement.isRunning);
         animator.SetBool("IsJumping", movement.isJumping);
+        animator.SetBool("IsFalling", movement.isFalling);
         animator.SetBool("IsCrouching", movement.isCrouching);
         animator.SetBool("IsLedgeGrabbing", movement.isLedgeGrabbed);
         animator.SetBool("IsClimbingLedge", movement.isClimbingLedge);

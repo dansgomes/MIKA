@@ -633,18 +633,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5605290194016368334, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
-      propertyPath: flashCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5605290194016368334, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
-      propertyPath: knockbackForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5605290194016368334, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
-      propertyPath: knockbackVertical
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8941324660393373691, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.21326
@@ -684,14 +672,6 @@ PrefabInstance:
     - target: {fileID: 8941324660393373691, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067641922787853375, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
-      propertyPath: climbDuration
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067641922787853375, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
-      propertyPath: ledgeClimbOffset.x
-      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
