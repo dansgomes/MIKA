@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 248707416668003373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23, y: 0.498, z: 0}
+  m_LocalPosition: {x: 0.23, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 406604619949590802}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.209, y: 0.706, z: 0}
+  m_LocalPosition: {x: 0.23, y: 0.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -444,6 +444,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4b59833c-9ff4-4ca5-b26a-a21de3190eac
     m_ActionName: 'Player/Run[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 450e9d20-6bc1-4a96-acf9-3f6740741bbf
+    m_ActionName: 'Player/pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

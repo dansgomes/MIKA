@@ -208,6 +208,8 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D wallHit = Physics2D.Raycast(ledgeWallCheckPos.position, facingDirection, ledgeCheckDistance, ledgeLayer);
         RaycastHit2D topHit = Physics2D.Raycast(ledgeTopCheckPos.position, facingDirection, ledgeCheckDistance, ledgeLayer);
 
+        Debug.Log("agarrou "+ wallHit.collider + " "+ topHit.collider);
+
         return wallHit.collider != null && topHit.collider == null;
     }
 
