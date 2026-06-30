@@ -347,6 +347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachinePipeline
+--- !u!4 &407677709 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8941324660393373691, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
+  m_PrefabInstance: {fileID: 142764332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &750677484
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +405,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 407677709}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 4.26
@@ -429,7 +434,7 @@ Transform:
   m_GameObject: {fileID: 750677484}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.91, y: -2.74, z: -10}
+  m_LocalPosition: {x: -7.93, y: 0.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1614,7 +1619,7 @@ Transform:
   m_GameObject: {fileID: 1587234208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.91, y: -2.74, z: -10}
+  m_LocalPosition: {x: -7.93, y: 0.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
