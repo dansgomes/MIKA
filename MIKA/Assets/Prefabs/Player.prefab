@@ -185,7 +185,12 @@ MonoBehaviour:
   verticalInput: 0
   isRunning: 0
   isWalking: 0
+  isMovingHorizontally: 0
   isJumping: 0
+  isFalling: 0
+  jumpedWhileWalking: 0
+  isLanding: 0
+  landingDuration: 0.15
   isKnockedBack: 0
   flipLocked: 0
   spriteRenderer: {fileID: 2216799668550748196}
@@ -224,7 +229,7 @@ MonoBehaviour:
   ledgeClimbOffset: {x: 0.6, y: 1}
   isLedgeGrabbed: 0
   isClimbingLedge: 0
-  climbDuration: 0.1
+  climbDuration: 0.3
 --- !u!114 &5605290194016368334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,9 +501,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
   animator: {fileID: 94623556283433975}
   movement: {fileID: 9067641922787853375}
-  damage: {fileID: 0}
-  interactable: {fileID: 0}
+  damage: {fileID: 5605290194016368334}
+  interactable: {fileID: 836040884625452994}
   animMoveX: 0
+  oneHandOverride: {fileID: 22100000, guid: f6df8d4a8eb56db4d9ee64fa600903e1, type: 2}
 --- !u!1 &5297647042609598433
 GameObject:
   m_ObjectHideFlags: 0
