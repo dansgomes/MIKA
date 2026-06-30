@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class fase_2 : MonoBehaviour
+public class fase_5 : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            master_setting.Instance.save_communicate=1;
+            master_setting.Instance.save_communicate=4;
             master_setting.Instance.SaveGame();
-            SceneManager.LoadScene("Fase 2");
+            SceneManager.LoadScene("Fase 5");
         }
     }
 }

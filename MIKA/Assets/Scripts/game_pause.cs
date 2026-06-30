@@ -111,6 +111,7 @@ public class game_pause : MonoBehaviour
     {
         if (pause.WasPressedThisFrame())
         {
+            Debug.Log("pause");
             pause_game = !pause_game;
 
             Time.timeScale = pause_game ? 0f : 1f;
