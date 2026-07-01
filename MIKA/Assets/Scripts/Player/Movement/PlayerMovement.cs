@@ -80,7 +80,6 @@ public class PlayerMovement : MonoBehaviour
     public bool canJump;
 
     [Header("Gravity")]
-    //gravidade base
     public float baseGravity = 2;
     public float maxFallSpeed = 18f;
     public float fallSpeedMultiplier = 2f;
@@ -101,6 +100,12 @@ public class PlayerMovement : MonoBehaviour
     public float climbDuration = 0.3f;
     Vector2 ledgeGrabPosition;
 
+    [Header("Ledge Grab")]
+    public LayerMask crouchZoneLayer;
+    public int crouchZoneCount = 0;
+    public bool isInCrouchZone => crouchZoneCount > 0;
+    private bool crouchInputHeld;
+
     private void Awake()
     {
         if (capsuleCollider != null)
@@ -118,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
 
         isWalking = isMovingHorizontally && (inGround || onPlatform);
 
-        isRunning = runInputHeld && isWalking;
+        isRunning = runInputHeld && isWalking && !isInCrouchZone;
 
         bool grounded = inGround || onPlatform;
 
@@ -149,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (isCrouching && (!inGround || isRunning))
+        if (isCrouching && (!inGround || isRunning) && !isInCrouchZone)
         {
             SetCrouching(false);
         }
@@ -287,15 +292,21 @@ public class PlayerMovement : MonoBehaviour
             runInputHeld = false;
     }
 
-    public void Crouch(InputAction.CallbackContext context)
-    {
-        if (isRunning || !inGround) return;
+public void Crouch(InputAction.CallbackContext context)
+{
+    if (context.performed)
+        crouchInputHeld = true;
+    else if (context.canceled)
+        crouchInputHeld = false;
 
-        if (context.performed)
-            SetCrouching(true);
-        else if (context.canceled)
-            SetCrouching(false);
-    }
+    if (isInCrouchZone) return;
+    if (isRunning || !inGround) return;
+
+    if (context.performed)
+        SetCrouching(true);
+    else if (context.canceled)
+        SetCrouching(false);
+}
 
     private void SetCrouching(bool value)
     {
@@ -325,6 +336,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
+        if (isInCrouchZone) return;
+
         if (context.performed)
         {
             if (isLedgeGrabbed) return;
@@ -370,6 +383,28 @@ public class PlayerMovement : MonoBehaviour
             Vector3 ls = transform.localScale;
             ls.x *= -1f;
             transform.localScale = ls;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(((1 << other.gameObject.layer) & crouchZoneLayer) != 0)
+        {
+            crouchZoneCount++;
+            SetCrouching(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(((1 << other.gameObject.layer) & crouchZoneLayer) != 0)
+        {
+            crouchZoneCount = Mathf.Max(0, crouchZoneCount - 1);
+
+            if (crouchZoneCount == 0 && !crouchInputHeld)
+            {
+                SetCrouching(false);
+            }
         }
     }
 

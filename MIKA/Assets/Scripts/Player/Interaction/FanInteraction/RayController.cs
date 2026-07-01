@@ -1,10 +1,7 @@
 using UnityEngine;
 
-public class FanController : MonoBehaviour
+public class RayController : MonoBehaviour
 {
-    [Header("Fan Settings")]
-    public Vector2 windDirection = new Vector2(-1f, 0f);
-    public float windForce = 10f;
 
     [Header("Detection")]
     public LayerMask playerLayer;
@@ -21,11 +18,6 @@ public class FanController : MonoBehaviour
     {
         if (!isActive) return;
         if ((playerLayer.value & (1 << other.gameObject.layer)) == 0) return;
-
-        Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
-        if (playerRb == null) return;
-
-        playerRb.AddForce(windDirection.normalized * windForce, ForceMode2D.Force);
     }
 
     public void Deactivate()

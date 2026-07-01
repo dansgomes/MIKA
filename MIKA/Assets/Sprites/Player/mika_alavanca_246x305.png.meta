@@ -1,0 +1,1113 @@
+fileFormatVersion: 2
+guid: 190ce99bc5c55b642910b045b90971c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8571811372751172673
+    second: mika_alavanca_246x305_0
+  - first:
+      213: 2767872311330178118
+    second: mika_alavanca_246x305_1
+  - first:
+      213: -8558609576559557295
+    second: mika_alavanca_246x305_2
+  - first:
+      213: -2670373613267769469
+    second: mika_alavanca_246x305_3
+  - first:
+      213: -8211133464831473602
+    second: mika_alavanca_246x305_4
+  - first:
+      213: -7860245398252129163
+    second: mika_alavanca_246x305_5
+  - first:
+      213: -6713155640051877342
+    second: mika_alavanca_246x305_6
+  - first:
+      213: 3741682665087982889
+    second: mika_alavanca_246x305_7
+  - first:
+      213: 1709136744983916452
+    second: mika_alavanca_246x305_8
+  - first:
+      213: -7312656476973757942
+    second: mika_alavanca_246x305_9
+  - first:
+      213: 9218900541771942752
+    second: mika_alavanca_246x305_10
+  - first:
+      213: 171516103657966403
+    second: mika_alavanca_246x305_11
+  - first:
+      213: 4502856303247889271
+    second: mika_alavanca_246x305_12
+  - first:
+      213: -8904980140678439869
+    second: mika_alavanca_246x305_13
+  - first:
+      213: 2558028979449343202
+    second: mika_alavanca_246x305_14
+  - first:
+      213: -2980479706868899130
+    second: mika_alavanca_246x305_15
+  - first:
+      213: -3249097392836682403
+    second: mika_alavanca_246x305_16
+  - first:
+      213: -1507999005652514392
+    second: mika_alavanca_246x305_17
+  - first:
+      213: -8113051888846214095
+    second: mika_alavanca_246x305_18
+  - first:
+      213: 1679144169081901788
+    second: mika_alavanca_246x305_19
+  - first:
+      213: 1440442710531089044
+    second: mika_alavanca_246x305_20
+  - first:
+      213: 7648469310719953985
+    second: mika_alavanca_246x305_21
+  - first:
+      213: 7469027633062310850
+    second: mika_alavanca_246x305_22
+  - first:
+      213: -7850262930819275269
+    second: mika_alavanca_246x305_23
+  - first:
+      213: -5864998493227839951
+    second: mika_alavanca_246x305_24
+  - first:
+      213: 4711452130058248686
+    second: mika_alavanca_246x305_25
+  - first:
+      213: 8278211723231500340
+    second: mika_alavanca_246x305_26
+  - first:
+      213: -7664718692673051429
+    second: mika_alavanca_246x305_27
+  - first:
+      213: -6568203246077369913
+    second: mika_alavanca_246x305_28
+  - first:
+      213: 3551558242943514961
+    second: mika_alavanca_246x305_29
+  - first:
+      213: 4982419987501364844
+    second: mika_alavanca_246x305_30
+  - first:
+      213: -5646400935903084428
+    second: mika_alavanca_246x305_31
+  - first:
+      213: -395551703533879950
+    second: mika_alavanca_246x305_32
+  - first:
+      213: -8686633701542397727
+    second: mika_alavanca_246x305_33
+  - first:
+      213: 4357001914438570400
+    second: mika_alavanca_246x305_34
+  - first:
+      213: -4260106306431812679
+    second: mika_alavanca_246x305_35
+  - first:
+      213: 7838300447173437278
+    second: mika_alavanca_246x305_36
+  - first:
+      213: -1165490473336494749
+    second: mika_alavanca_246x305_37
+  - first:
+      213: -4881592356347586558
+    second: mika_alavanca_246x305_38
+  - first:
+      213: -8180912515715783466
+    second: mika_alavanca_246x305_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 170
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2745
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb438dc8feca0980800000000000000
+      internalID: -8571811372751172673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2745
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644897cc335796620800000000000000
+      internalID: 2767872311330178118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_2
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2745
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15549e18fe5b93980800000000000000
+      internalID: -8558609576559557295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2745
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3872993d85de0fad0800000000000000
+      internalID: -2670373613267769469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2440
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38c5614e913c0e80800000000000000
+      internalID: -8211133464831473602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2440
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57478c5a47ccae290800000000000000
+      internalID: -7860245398252129163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2440
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a3cc0638416d2a0800000000000000
+      internalID: -6713155640051877342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_7
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2440
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d5ec24f802de330800000000000000
+      internalID: 3741682665087982889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2135
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af655d60d218b710800000000000000
+      internalID: 1709136744983916452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_9
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2135
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a0585ada9348a90800000000000000
+      internalID: -7312656476973757942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2135
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b09fbe23d10ff70800000000000000
+      internalID: 9218900541771942752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_11
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2135
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bcacfccf8516200800000000000000
+      internalID: 171516103657966403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1830
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77318bd53fb5d7e30800000000000000
+      internalID: 4502856303247889271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_13
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1830
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c14fe1eb72b6480800000000000000
+      internalID: -8904980140678439869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1830
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecab35cdc1ff7320800000000000000
+      internalID: 2558028979449343202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_15
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1830
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2a1d37f7533a6d0800000000000000
+      internalID: -2980479706868899130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1525
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d525bb223e8e2d0800000000000000
+      internalID: -3249097392836682403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_17
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1525
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a98072e4e2821be0800000000000000
+      internalID: -1507999005652514392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_18
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1525
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c6209ba46a86f80800000000000000
+      internalID: -8113051888846214095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_19
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1525
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd29bcca9b48d4710800000000000000
+      internalID: 1679144169081901788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1220
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492a180730b7df310800000000000000
+      internalID: 1440442710531089044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_21
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1220
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c80f49052d42a60800000000000000
+      internalID: 7648469310719953985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_22
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1220
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c371464f0157a760800000000000000
+      internalID: 7469027633062310850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_23
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1220
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5a917f4734e0390800000000000000
+      internalID: -7850262930819275269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 915
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e04fac1f65b9ea0800000000000000
+      internalID: -5864998493227839951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_25
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 915
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1216cffb0726140800000000000000
+      internalID: 4711452130058248686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_26
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 915
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43810b2d3bd12e270800000000000000
+      internalID: 8278211723231500340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_27
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 915
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd42deb55f271a590800000000000000
+      internalID: -7664718692673051429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 610
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1adf092fd09d4a0800000000000000
+      internalID: -6568203246077369913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_29
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 610
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15932cda76ba94130800000000000000
+      internalID: 3551558242943514961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_30
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 610
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6633d4a49c152540800000000000000
+      internalID: 4982419987501364844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_31
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 610
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4704014c344f3a1b0800000000000000
+      internalID: -5646400935903084428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dff8442d7b28af0800000000000000
+      internalID: -395551703533879950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_33
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 305
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8f0a51ca0e27780800000000000000
+      internalID: -8686633701542397727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_34
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 305
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1dec3282e277c30800000000000000
+      internalID: 4357001914438570400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_35
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 305
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbfab3a2ef01e4c0800000000000000
+      internalID: -4260106306431812679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57ee844abc37cc60800000000000000
+      internalID: 7838300447173437278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mika_alavanca_246x305_37
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 246
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3652dabe69853dfe0800000000000000
+      internalID: -1165490473336494749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c607d7fc78c3ae54abb2a9abfbbce229
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":246.0,"y":305.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      mika_alavanca_246x305_0: -8571811372751172673
+      mika_alavanca_246x305_1: 2767872311330178118
+      mika_alavanca_246x305_10: 9218900541771942752
+      mika_alavanca_246x305_11: 171516103657966403
+      mika_alavanca_246x305_12: 4502856303247889271
+      mika_alavanca_246x305_13: -8904980140678439869
+      mika_alavanca_246x305_14: 2558028979449343202
+      mika_alavanca_246x305_15: -2980479706868899130
+      mika_alavanca_246x305_16: -3249097392836682403
+      mika_alavanca_246x305_17: -1507999005652514392
+      mika_alavanca_246x305_18: -8113051888846214095
+      mika_alavanca_246x305_19: 1679144169081901788
+      mika_alavanca_246x305_2: -8558609576559557295
+      mika_alavanca_246x305_20: 1440442710531089044
+      mika_alavanca_246x305_21: 7648469310719953985
+      mika_alavanca_246x305_22: 7469027633062310850
+      mika_alavanca_246x305_23: -7850262930819275269
+      mika_alavanca_246x305_24: -5864998493227839951
+      mika_alavanca_246x305_25: 4711452130058248686
+      mika_alavanca_246x305_26: 8278211723231500340
+      mika_alavanca_246x305_27: -7664718692673051429
+      mika_alavanca_246x305_28: -6568203246077369913
+      mika_alavanca_246x305_29: 3551558242943514961
+      mika_alavanca_246x305_3: -2670373613267769469
+      mika_alavanca_246x305_30: 4982419987501364844
+      mika_alavanca_246x305_31: -5646400935903084428
+      mika_alavanca_246x305_32: -395551703533879950
+      mika_alavanca_246x305_33: -8686633701542397727
+      mika_alavanca_246x305_34: 4357001914438570400
+      mika_alavanca_246x305_35: -4260106306431812679
+      mika_alavanca_246x305_36: 7838300447173437278
+      mika_alavanca_246x305_37: -1165490473336494749
+      mika_alavanca_246x305_4: -8211133464831473602
+      mika_alavanca_246x305_5: -7860245398252129163
+      mika_alavanca_246x305_6: -6713155640051877342
+      mika_alavanca_246x305_7: 3741682665087982889
+      mika_alavanca_246x305_8: 1709136744983916452
+      mika_alavanca_246x305_9: -7312656476973757942
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

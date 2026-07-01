@@ -230,6 +230,10 @@ MonoBehaviour:
   isLedgeGrabbed: 0
   isClimbingLedge: 0
   climbDuration: 0.3
+  crouchZoneLayer:
+    serializedVersion: 2
+    m_Bits: 8192
+  crouchZoneCount: 0
 --- !u!114 &5605290194016368334
 MonoBehaviour:
   m_ObjectHideFlags: 0

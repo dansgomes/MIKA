@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class FanButton : MonoBehaviour, IInteractable
+public class RayButton : MonoBehaviour, IInteractable
 {
     [Header("Target")]
-    public FanController targetFan;
+    public RayController targetFan;
 
     public bool HoldsPlayer => false;
 
     private bool isUsed = false;
+
+    public Animator eletricityAnimator;
+    public SpriteRenderer eletricityRenderer;
 
     public bool IsBeingInteracted => isUsed;
 
@@ -18,6 +21,8 @@ public class FanButton : MonoBehaviour, IInteractable
 
         isUsed = true;
         targetFan.Deactivate();
+        eletricityAnimator.enabled = false;
+        eletricityRenderer.enabled = false;
     }
 
     public void EndInteraction() { }
