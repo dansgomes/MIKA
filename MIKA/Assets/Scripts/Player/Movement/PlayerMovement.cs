@@ -54,9 +54,6 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 FacingDirection => new Vector2(isFacingRight ? 1f : -1f, 0f);
 
-    // 1 = movendo na mesma direção do facing (empurrando), -1 = movendo na direção contrária (puxando)
-    // mantém o último valor não-zero quando o player para, em vez de resetar pra 0,
-    // pra blend tree de empurrar/puxar congelar na pose certa (ver PlayerAnimator)
     private float lastInteractionDirection = 1f;
     public float InteractionDirection
     {
@@ -117,13 +114,10 @@ public class PlayerMovement : MonoBehaviour
     {
         GroundCheck();
 
-        // se move horizontalmente, no chão ou no ar (independente de inGround/onPlatform)
         isMovingHorizontally = Mathf.Abs(horizontalMovement) > 0.01f;
 
         isWalking = isMovingHorizontally && (inGround || onPlatform);
 
-        // isRunning só deve ser true quando o player está de fato se movendo correndo,
-        // não apenas quando o input de correr está pressionado (runInputHeld)
         isRunning = runInputHeld && isWalking;
 
         bool grounded = inGround || onPlatform;
@@ -134,13 +128,8 @@ public class PlayerMovement : MonoBehaviour
             jumpedWhileWalking = false;
         }
 
-        // caindo = no ar, descendo, sem ter pulado, e não pendurado numa borda
-        // (mutuamente exclusivo com isJumping: pular usa isJumping até a queda do pulo acabar)
         isFalling = !isJumping && !grounded && !isLedgeGrabbed && rb.linearVelocity.y < -0.01f;
 
-        // detecta o evento de pouso: estava no ar no frame anterior e agora está no chão.
-        // dispara a animação de aterrissagem por uma duração curta e fixa.
-        // ignora ledge grab/climb: sair de uma borda (escalando ou soltando) não é um "pouso" real.
         if (isLedgeGrabbed || isClimbingLedge)
         {
             wasAirborne = false;
