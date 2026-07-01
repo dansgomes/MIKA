@@ -645,10 +645,12 @@ MonoBehaviour:
   fallingObjectPrefab: {fileID: 5142716138812627580, guid: 53c00a264856ece4e90e173501d78ae1, type: 3}
   mapStartX: -6.7
   spawnY: 6
-  spawnCountPerInterval: 1
-  forwardOffset: 4
+  spawnCountPerInterval: 2
+  behindPlayerOffset: 2
+  levelEndX: 25
+  minDistanceBetweenObjects: 3
   maxInterval: 0.5
-  minInterval: 0.1
+  minInterval: 0.3
   maxDistance: 32
   spawnOnStart: 1
 --- !u!4 &1030389915

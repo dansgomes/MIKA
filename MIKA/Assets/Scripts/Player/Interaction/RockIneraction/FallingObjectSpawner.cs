@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FallingObjectSpawner : MonoBehaviour
@@ -11,7 +12,13 @@ public class FallingObjectSpawner : MonoBehaviour
     public float mapStartX = 0f;
     public float spawnY = 10f;
     public int spawnCountPerInterval = 1;
-    public float forwardOffset = 2f;
+
+    [Header("Spawn Range")]
+    public float behindPlayerOffset = 2f;
+    public float levelEndX = 100f;
+
+    [Header("Spacing")]
+    public float minDistanceBetweenObjects = 3f;
 
     [Header("Interval Scaling")]
     public float maxInterval = 3f;
@@ -53,10 +60,7 @@ public class FallingObjectSpawner : MonoBehaviour
             float interval = GetCurrentInterval();
             yield return new WaitForSeconds(interval);
 
-            for (int i = 0; i < spawnCountPerInterval; i++)
-            {
-                SpawnObject();
-            }
+            SpawnBatch();
         }
     }
 
@@ -70,23 +74,45 @@ public class FallingObjectSpawner : MonoBehaviour
         return Mathf.Lerp(maxInterval, minInterval, t);
     }
 
-    private void SpawnObject()
+    private void SpawnBatch()
     {
         if (player == null || fallingObjectPrefab == null) return;
 
-        float playerX = player.position.x;
+        float rangeMin = player.position.x - behindPlayerOffset;
+        float rangeMax = levelEndX;
 
-        if (playerX <= mapStartX) return;
+        if (rangeMin >= rangeMax) return;
 
-        float spawnX = Random.Range(mapStartX, playerX + forwardOffset);
+        List<float> placedX = new List<float>();
 
-        Vector2 spawnPosition = new Vector2(spawnX, spawnY);
-        Instantiate(fallingObjectPrefab, spawnPosition, Quaternion.identity);
+        for (int i = 0; i < spawnCountPerInterval; i++)
+        {
+            float spawnX = Random.Range(rangeMin, rangeMax);
+
+            if (IsTooClose(spawnX, placedX))
+                continue;
+
+            Vector2 spawnPosition = new Vector2(spawnX, spawnY);
+            Instantiate(fallingObjectPrefab, spawnPosition, Quaternion.identity);
+
+            placedX.Add(spawnX);
+        }
+    }
+
+    private bool IsTooClose(float x, List<float> placedX)
+    {
+        foreach (float other in placedX)
+        {
+            if (Mathf.Abs(x - other) < minDistanceBetweenObjects)
+                return true;
+        }
+        return false;
     }
 
     void OnDrawGizmosSelected()
     {
         float playerX = player != null ? player.position.x : mapStartX + 5f;
+        float rangeMin = playerX - behindPlayerOffset;
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(new Vector3(mapStartX, spawnY - 1f, 0f), new Vector3(mapStartX, spawnY + 1f, 0f));
@@ -94,13 +120,15 @@ public class FallingObjectSpawner : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(new Vector3(playerX, spawnY - 1f, 0f), new Vector3(playerX, spawnY + 1f, 0f));
 
-        Gizmos.color = Color.red;
-        float maxDistX = mapStartX + maxDistance;
-        Gizmos.DrawLine(new Vector3(maxDistX, spawnY - 1f, 0f), new Vector3(maxDistX, spawnY + 1f, 0f));
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(new Vector3(levelEndX, spawnY - 1f, 0f), new Vector3(levelEndX, spawnY + 1f, 0f));
 
         Gizmos.color = new Color(1f, 0.5f, 0f, 0.3f);
-        float width = playerX - mapStartX;
-        Vector3 center = new Vector3(mapStartX + width / 2f, spawnY, 0f);
-        Gizmos.DrawCube(center, new Vector3(width, 0.1f, 0f));
+        float width = levelEndX - rangeMin;
+        if (width > 0f)
+        {
+            Vector3 center = new Vector3(rangeMin + width / 2f, spawnY, 0f);
+            Gizmos.DrawCube(center, new Vector3(width, 0.1f, 0f));
+        }
     }
 }
