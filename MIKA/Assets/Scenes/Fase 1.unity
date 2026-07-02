@@ -502,7 +502,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.26
+  orthographic size: 3.94
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -527,7 +527,7 @@ Transform:
   m_GameObject: {fileID: 519053545}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4247427, y: -1.9344001, z: -10}
+  m_LocalPosition: {x: -2.0099583, y: -3.00748, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -887,7 +887,7 @@ Transform:
   m_GameObject: {fileID: 939646012}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.35, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -943,7 +943,7 @@ TilemapRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.000048816204, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -3687,7 +3687,7 @@ TilemapRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.000048816204, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -4048,10 +4048,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 26.653769, y: 2.5877588}
-      - {x: -7.5520425, y: 2.6492944}
-      - {x: -7.5040693, y: -5.9194584}
-      - {x: 26.644081, y: -6.4424453}
+    - - {x: 26.711096, y: 2.1864712}
+      - {x: -7.523379, y: 2.19068}
+      - {x: -7.5613966, y: -6.6360435}
+      - {x: 26.644081, y: -6.6430893}
   m_UseDelaunayMesh: 1
 --- !u!4 &1366213715
 Transform:
@@ -4076,6 +4076,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4643120485600239211, guid: 2fb9afc80aa0840448d67c1e2315b62b, type: 3}
+      propertyPath: m_ChunkCullingBounds.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6108557099733671425, guid: 2fb9afc80aa0840448d67c1e2315b62b, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 3.17428
@@ -4657,11 +4661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8941324660393373691, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.59
+      value: -4.96
       objectReference: {fileID: 0}
     - target: {fileID: 8941324660393373691, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.84
+      value: -3.13
       objectReference: {fileID: 0}
     - target: {fileID: 8941324660393373691, guid: fb103a58702b7b04a82d8a0a09de33d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4727,11 +4731,11 @@ PrefabInstance:
       objectReference: {fileID: 1366213714}
     - target: {fileID: 3746552799880189661, guid: 39adc44f3090c744aad9d43f091ad26d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.59
+      value: -4.96
       objectReference: {fileID: 0}
     - target: {fileID: 3746552799880189661, guid: 39adc44f3090c744aad9d43f091ad26d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.84
+      value: -3.13
       objectReference: {fileID: 0}
     - target: {fileID: 3746552799880189661, guid: 39adc44f3090c744aad9d43f091ad26d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4783,12 +4787,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8764365729027076886, guid: 39adc44f3090c744aad9d43f091ad26d, type: 3}
       propertyPath: m_DeadZoneHeight
-      value: 0
+      value: 1.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764365729027076886, guid: 39adc44f3090c744aad9d43f091ad26d, type: 3}
+      propertyPath: m_SoftZoneHeight
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 8986985389551048349, guid: 39adc44f3090c744aad9d43f091ad26d, type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1883119488}
+    - target: {fileID: 8986985389551048349, guid: 39adc44f3090c744aad9d43f091ad26d, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 3.94
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
