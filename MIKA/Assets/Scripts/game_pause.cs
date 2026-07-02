@@ -47,7 +47,7 @@ public class game_pause : MonoBehaviour
         
         if(sond_manager.instance == null)
             {
-                Instantiate(master_setting_prefab);
+                Instantiate(sond_manager_prefab);
             }
 
 
