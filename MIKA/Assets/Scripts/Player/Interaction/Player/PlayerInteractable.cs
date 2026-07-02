@@ -14,6 +14,7 @@ public class PlayerInteractable : MonoBehaviour
     private IInteractable currentInteractable;
 
     public bool IsInteracting => currentInteractable != null;
+    public bool IsPushingBoxes => currentInteractable is BoxInteract;
 
     void Awake()
     {
@@ -74,6 +75,11 @@ public class PlayerInteractable : MonoBehaviour
         }
     }
 
+    public void NotifyHeldInteractionFinished()
+    {
+        EndCurrentInteraction();
+    }
+
     private void EndCurrentInteraction()
     {
         if (currentInteractable == null) return;
@@ -81,6 +87,7 @@ public class PlayerInteractable : MonoBehaviour
         currentInteractable.EndInteraction();
         currentInteractable = null;
         playerMovement.flipLocked = false;
+        playerMovement.enabled = true;
     }
 
     void OnDrawGizmos()

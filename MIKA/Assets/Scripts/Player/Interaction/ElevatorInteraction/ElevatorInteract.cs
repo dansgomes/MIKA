@@ -17,9 +17,7 @@ public class ElevatorInteract : MonoBehaviour, IInteractable
     private int targetIndex = 0;
     private Coroutine loopRoutine;
 
-    //transform do player atualmente em cima da plataforma (null se nenhum)
     private Transform passenger;
-    //parent original do player, restaurado ao sair da plataforma
     private Transform passengerOriginalParent;
 
     public bool IsBeingInteracted => isActive;
@@ -89,17 +87,14 @@ public class ElevatorInteract : MonoBehaviour, IInteractable
         }
     }
 
-    //chamado pelo ElevatorPlayerDetector (trigger filho) quando o player entra na área de embarque
     public void OnPlayerEnter(Transform player)
     {
-        if (passenger != null) return; //já tem um passageiro, ignora
+        if (passenger != null) return;
 
         passenger = player;
         passengerOriginalParent = player.parent;
         player.SetParent(transform, true);
 
-        //zera a velocidade vertical do player no instante do embarque,
-        //evitando que uma velocidade de queda residual cause um solavanco
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
         if (playerRb != null)
         {
@@ -107,10 +102,9 @@ public class ElevatorInteract : MonoBehaviour, IInteractable
         }
     }
 
-    //chamado pelo ElevatorPlayerDetector (trigger filho) quando o player sai da área de embarque
     public void OnPlayerExit(Transform player)
     {
-        if (passenger != player) return; //não é o passageiro atual, ignora
+        if (passenger != player) return;
 
         player.SetParent(passengerOriginalParent, true);
         passenger = null;

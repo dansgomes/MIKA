@@ -32,7 +32,6 @@ public class CutsceneManager : MonoBehaviour
         if (IsPlaying) return;
         IsPlaying = true;
 
-        // trava movimento
         if (playerMovement != null)
         {
             playerMovement.enabled = false;

@@ -9,7 +9,6 @@ public class PlayerAnimator : MonoBehaviour
     public float animMoveX;
 
     [Header("Visual State")]
-    [Tooltip("Override Controller usado depois que a personagem perde a mão (evento narrativo permanente).")]
     public AnimatorOverrideController oneHandOverride;
     private bool hasOneHand;
 
@@ -35,7 +34,7 @@ public class PlayerAnimator : MonoBehaviour
         animator.SetBool("IsLedgeGrabbing", movement.isLedgeGrabbed);
         animator.SetBool("IsClimbingLedge", movement.isClimbingLedge);
         animator.SetBool("IsTakingDamage", damage.IsTakingDamage);
-        animator.SetBool("IsInteracting", interactable.IsInteracting);
+        animator.SetBool("IsPushingBoxes", interactable.IsPushingBoxes);
         animator.SetFloat("InteractDirection", movement.InteractionDirection);
 
         animator.SetFloat("MoveXAbs", Mathf.Abs(movement.horizontalMovement));
@@ -51,11 +50,24 @@ public class PlayerAnimator : MonoBehaviour
         if (hasOneHand) return;
         if (oneHandOverride == null)
         {
-            Debug.LogWarning("PlayerAnimator: oneHandOverride não foi atribuído no Inspector.");
             return;
         }
 
         animator.runtimeAnimatorController = oneHandOverride;
         hasOneHand = true;
+    }
+
+    public void SetPullingLever(bool value)
+    {
+        if (value)
+            animator.SetTrigger("PullLeverTrigger");
+
+        animator.SetBool("IsPullingLever", value);
+    }
+
+    public void OnLeverAnimationFinished()
+    {
+        SetPullingLever(false);
+        interactable.NotifyHeldInteractionFinished();
     }
 }

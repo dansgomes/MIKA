@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public event Action OnJumped;
+    public event Action OnLanded;
 
     [Header("Movement")]
     public Rigidbody2D rb;
@@ -147,6 +148,7 @@ public class PlayerMovement : MonoBehaviour
         {
             wasAirborne = false;
             StartCoroutine(LandingRoutine());
+            OnLanded?.Invoke();
         }
 
         if (isKnockedBack)
@@ -292,21 +294,21 @@ public class PlayerMovement : MonoBehaviour
             runInputHeld = false;
     }
 
-public void Crouch(InputAction.CallbackContext context)
-{
-    if (context.performed)
-        crouchInputHeld = true;
-    else if (context.canceled)
-        crouchInputHeld = false;
+    public void Crouch(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            crouchInputHeld = true;
+        else if (context.canceled)
+            crouchInputHeld = false;
 
-    if (isInCrouchZone) return;
-    if (isRunning || !inGround) return;
+        if (isInCrouchZone) return;
+        if (isRunning || !inGround) return;
 
-    if (context.performed)
-        SetCrouching(true);
-    else if (context.canceled)
-        SetCrouching(false);
-}
+        if (context.performed)
+            SetCrouching(true);
+        else if (context.canceled)
+            SetCrouching(false);
+    }
 
     private void SetCrouching(bool value)
     {
